@@ -53,24 +53,18 @@
                 sensitivity:1,
                 releaseOnEdges:true,
             },
-            breakpoints: {
-          300: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            direction: "horizental",
 
-            
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          992: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-        },
-       
+        });
+
+        var swiper = new Swiper(".mySwiperMobile", {
+      
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+            },
+        
+
         });
     </script>
 </html>

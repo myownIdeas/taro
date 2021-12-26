@@ -414,6 +414,18 @@
         top: auto;
         transform: inherit;
     }
+
+    .slider-content {
+        padding: 60px 0 0;
+    }
+    .swiper-pagination {
+        position: relative;
+        bottom: 0;
+        margin-top: 60px;
+    }
+    .content-slider {
+        padding: 0;
+    }
 }
 @media (max-width: 575px) {
     .navbar a img {
@@ -596,8 +608,8 @@
         font-size: 42px;
     }
     .content-slider {
-        padding: 80px 0 60px;
-        min-height: 100vh;
+        padding: 0 0 0px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -703,5 +715,8 @@
         50% {
             top: 40px;
         }
+    }
+    .slider-content {
+        padding: 60px 0 0;
     }
 }
