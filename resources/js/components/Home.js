@@ -158,89 +158,178 @@ function Home() {
 
 
             <section className='slider-content'>
-                <div className="swiper mySwiper">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                            <div className="container">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-7  d-lg-block d-none">
-                                        <div className="img-slider text-lg-end img1">
-                                            <img src="frontend/images/slide1.png" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5">
-                                        <div className="content-slider">
-                                            <span className='step'>Step 1</span>
-                                            <h2>Fill your cart</h2>
-                                            <div className="img-slider d-block d-lg-none">
+                <div className='d-none d-md-block'>
+                    <div className="swiper mySwiper ">
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-lg-end img1">
                                                 <img src="frontend/images/slide1.png" alt="" />
                                             </div>
-                                            <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
-                                            <Link to="#" className='btn btn-primary'>Subscribe</Link>
                                         </div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="container">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-5 ">
-                                        <div className="content-slider">
-                                            <span className='step'>Step 2</span>
-                                            <h2>Choose how you pay</h2>
-                                            <div className="img-slider d-block d-lg-none">
-                                                <img src="frontend/images/slide2.png" alt="" className="slide2" />
+                                        <div className="col-lg-5">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 1</span>
+                                                <h2>Fill your cart</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide1.png" alt="" />
+                                                </div>
+                                                <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
                                             </div>
-                                            <p>Select the payment schedule that works for you, then confirm your loan. We'll never charge more than you see up front.</p>
-                                            <Link to="#" className='btn btn-primary'>Subscribe</Link>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-7  d-lg-block d-none">
-                                        <div className="img-slider text-end">
-                                            <img src="frontend/images/slide2.png" alt="" className="slide2 img2" />
-                                        </div>
+
                                     </div>
 
 
                                 </div>
-
-
                             </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="container">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-7  d-lg-block d-none">
-                                        <div className="img-slider text-lg-end">
-                                            <img src="frontend/images/slide3.png" alt="" className="slide3 img3" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5">
-                                        <div className="content-slider">
-                                            <span className='step'>Step 3</span>
-                                            <h2>Make easy monthly payments</h2>
-                                            <div className="img-slider d-block d-lg-none">
-                                                <img src="frontend/images/slide3.png" alt="" className="slide3 " />
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-5 ">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 2</span>
+                                                <h2>Choose how you pay</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide2.png" alt="" className="slide2" />
+                                                </div>
+                                                <p>Select the payment schedule that works for you, then confirm your loan. We'll never charge more than you see up front.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
                                             </div>
-                                            <p>Download the Taro app or sign in at taro.pk. We'll send you email and text reminders so you never miss a payment.</p>
-                                            <Link to="#" className='btn btn-primary'>Subscribe</Link>
                                         </div>
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-end">
+                                                <img src="frontend/images/slide2.png" alt="" className="slide2 img2" />
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-lg-end">
+                                                <img src="frontend/images/slide3.png" alt="" className="slide3 img3" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 3</span>
+                                                <h2>Make easy monthly payments</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide3.png" alt="" className="slide3 " />
+                                                </div>
+                                                <p>Download the Taro app or sign in at taro.pk. We'll send you email and text reminders so you never miss a payment.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </div>
-
                             </div>
                         </div>
+                        <div className="swiper-pagination"></div>
+                        <div className="slider-content"></div>
+
                     </div>
-                    <div className="swiper-pagination"></div>
-                    <div className="slider-content"></div>
 
                 </div>
 
+                {/* MOBILE SLIDER */}
+
+                <div className='d-block d-md-none'>
+                    <div className="swiper mySwiperMobile">
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-lg-end img1">
+                                                <img src="frontend/images/slide1.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 1</span>
+                                                <h2>Fill your cart</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide1.png" alt="" />
+                                                </div>
+                                                <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-5 ">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 2</span>
+                                                <h2>Choose how you pay</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide2.png" alt="" className="slide2" />
+                                                </div>
+                                                <p>Select the payment schedule that works for you, then confirm your loan. We'll never charge more than you see up front.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-end">
+                                                <img src="frontend/images/slide2.png" alt="" className="slide2 img2" />
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="container">
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-7  d-lg-block d-none">
+                                            <div className="img-slider text-lg-end">
+                                                <img src="frontend/images/slide3.png" alt="" className="slide3 img3" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5">
+                                            <div className="content-slider">
+                                                <span className='step'>Step 3</span>
+                                                <h2>Make easy monthly payments</h2>
+                                                <div className="img-slider d-block d-lg-none">
+                                                    <img src="frontend/images/slide3.png" alt="" className="slide3 " />
+                                                </div>
+                                                <p>Download the Taro app or sign in at taro.pk. We'll send you email and text reminders so you never miss a payment.</p>
+                                                <Link to="#" className='btn btn-primary'>Subscribe</Link>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-pagination"></div>
+                        <div className="slider-content"></div>
+
+                    </div>
+                </div>
             </section>
 
 
