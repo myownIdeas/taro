@@ -79,7 +79,7 @@ function Home() {
                                             <input type="text" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
                                             <i><img src="frontend/images/envelope.svg" alt="" /></i>
                                         </div>
-                                        <button type="submit"  className='btn btn-primary'>Subscribe</button>
+                                        <button type="submit" className='btn btn-primary'>Subscribe</button>
                                     </div>
                                     <p className="note">No spam, notifications only about new products and updates. <br /> You can always unsubscribe.</p>
                                 </form>
