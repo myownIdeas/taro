@@ -22766,8 +22766,8 @@ footer .shapefooter {
   right: 0;
   top: 103px;
   z-index: 2;
-  -webkit-animation: MoveUpDown 3s linear infinite;
-          animation: MoveUpDown 3s linear infinite;
+  -webkit-animation: MoveUpDown 5s linear infinite;
+          animation: MoveUpDown 5s linear infinite;
 }
 
 .hero-main .img-holder .dashboard {
@@ -22775,8 +22775,8 @@ footer .shapefooter {
   max-width: 285px;
   left: 0;
   top: 114px;
-  -webkit-animation: MoveUpDown2 3s linear infinite;
-          animation: MoveUpDown2 3s linear infinite;
+  -webkit-animation: MoveUpDown2 4s linear infinite;
+          animation: MoveUpDown2 4s linear infinite;
 }
 
 @-webkit-keyframes MoveUpDown {

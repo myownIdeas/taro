@@ -68129,6 +68129,9 @@ function Home() {
     className: "order"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: "",
+    onSubmit: function onSubmit(e) {
+      submitForm(e);
+    },
     className: "subscription-form"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Subscribe to get early access"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "inputGroup"
@@ -68136,12 +68139,18 @@ function Home() {
     className: "icon-prepend"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
+    required: true,
+    onChange: changeHandler,
+    name: "email",
+    value: data.email,
+    autoComplete: "off",
     className: "form-control",
     placeholder: "Your email address"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/envelope.svg",
     alt: ""
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
     className: "btn btn-primary"
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "note"

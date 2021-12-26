@@ -26,14 +26,14 @@
             right: 0;
             top: 103px;
             z-index: 2;
-            animation: MoveUpDown 3s linear infinite;
+            animation: MoveUpDown 5s linear infinite;
         }
         .dashboard {
             position: absolute;
             max-width: 285px;
             left: 0;
             top: 114px;
-            animation: MoveUpDown2 3s linear infinite;
+            animation: MoveUpDown2 4s linear infinite;
         }
     }
 }

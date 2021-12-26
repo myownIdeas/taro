@@ -72,14 +72,14 @@ function Home() {
                                     <img src="frontend/images/order2.png" alt="" className='order' />
                                 </div>
 
-                                <form action="" className='subscription-form'>
+                                <form action="" onSubmit={(e) => { submitForm(e) }} className='subscription-form'>
                                     <h4>Subscribe to get early access</h4>
                                     <div className="inputGroup">
                                         <div className="icon-prepend">
-                                            <input type="text" className='form-control' placeholder='Your email address' />
+                                            <input type="text" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
                                             <i><img src="frontend/images/envelope.svg" alt="" /></i>
                                         </div>
-                                        <button className='btn btn-primary'>Subscribe</button>
+                                        <button type="submit"  className='btn btn-primary'>Subscribe</button>
                                     </div>
                                     <p className="note">No spam, notifications only about new products and updates. <br /> You can always unsubscribe.</p>
                                 </form>
