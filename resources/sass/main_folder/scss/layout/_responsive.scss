@@ -1,0 +1,699 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1205px;
+  }
+  .slider-content {
+    .container {
+      max-width: 1100px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .hero-main {
+    .img-holder {
+      max-width: 600px;
+    }
+  }
+  .slider-content {
+    padding: 100px 0;
+  }
+  .img-holder img {
+    max-width: 100%;
+  }
+  footer .text-content h2,
+  footer .text-content .h2 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+  .text-content h1,
+  .text-content .h1,
+  .text-content h2,
+  .text-content .h2 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .text-content p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .shariha {
+    padding: 45px 0;
+  }
+  .caption h2,
+  .caption .h2 {
+    font-size: 52px;
+    line-height: 58px;
+  }
+  .caption p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .caption {
+    max-width: 670px;
+  }
+  .content-slider h2,
+  .content-slider .h2 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  footer .text-content h2,
+  footer .text-content .h2 {
+    font-size: 44px;
+  }
+  .text-content h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .text-content p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .caption h2,
+  .caption .h2 {
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0 auto 8px;
+  }
+  .caption {
+    max-width: 610px;
+  }
+  .hero-main .img-holder .order {
+    max-width: 200px;
+  }
+  .hero-main .img-holder .dashboard {
+    max-width: 202px;
+  }
+  .shariha .caption {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-main .img-holder {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .shariha {
+    [class*="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+
+  .img-slider {
+    text-align: center;
+    padding: 20px 0;
+    img {
+      max-width: 410px;
+      margin: 0 auto;
+    }
+  }
+  .content-slider p {
+    max-width: 100%;
+  }
+  footer .img-holder {
+    text-align: center;
+  }
+
+  footer .img-holder img {
+    max-width: 300px;
+  }
+  .cardAnywhere p {
+    font-size: 18px;
+  }
+  .btn {
+    max-width: 144px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  header .container {
+    max-width: 100%;
+    padding: 0 22px;
+  }
+  .navbar a.brandName img {
+    height: 32px;
+  }
+  header {
+    height: 68px;
+  }
+  .hero-main {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .hero-main .bgImg {
+    display: none;
+  }
+  .text-content {
+    max-width: 464px;
+    margin: 0 auto;
+  }
+  .text-content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .text-content h1,
+  .text-content .h1 {
+    font-size: 48px;
+    line-height: 1.4;
+  }
+  .text-content img {
+    height: 28px;
+  }
+  .subscription-form .btn {
+    max-width: 100px;
+    margin-left: 16px;
+  }
+  .shariha {
+    padding: 20px 0 60px;
+  }
+  .shariha .caption {
+    max-width: 476px;
+    margin: 0 auto 40px;
+  }
+  .caption h2,
+  .caption .h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 auto 16px;
+  }
+  .caption p {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 460px;
+  }
+  .cardBox {
+    padding: 25px;
+  }
+  .cardBox .icon img {
+    height: 45px;
+  }
+  .cardBox h4,
+  .cardBox .h4 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  .cardBox p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #736392;
+    margin: 0;
+  }
+  .shariha .container {
+    max-width: 754px;
+  }
+  .cardAnywhere {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .cardOverlay {
+    max-width: 473px;
+    margin: 0 auto;
+  }
+  .cardAnywhere h2,
+  .cardAnywhere .h2 {
+    font-size: 40px;
+    line-height: 52px;
+    max-width: 440px;
+
+    margin-bottom: 16px;
+  }
+  .cardAnywhere p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .shariha [class*="col-"] {
+    margin-bottom: 16px;
+  }
+  .form-control {
+    font-size: 14px;
+  }
+  .inputGroup .icon-prepend i {
+    line-height: 1;
+  }
+  .inputGroup .icon-prepend i img {
+    width: 20px;
+    height: 20px;
+  }
+  .inputGroup .icon-prepend .form-control {
+    padding-left: 44px;
+  }
+  .cardAnywhere {
+    padding: 34px ​20p;
+  }
+  .slider-content {
+    padding: 80px 0;
+  }
+
+  .content-slider {
+    text-align: center;
+    max-width: 476px;
+    margin: 0 auto;
+  }
+  .content-slider h2,
+  .content-slider .h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+  }
+  .content-slider p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .content-slider .btn {
+    min-width: 100px;
+  }
+  .img-slider img {
+    max-width: 458px;
+    margin: 0 auto;
+  }
+  .img-slider img.slide2 {
+    max-width: 393px;
+  }
+  .img-slider img.slide3 {
+    max-width: 427px;
+  }
+  .text-content {
+    text-align: center;
+  }
+  footer .img-holder {
+    margin: 0;
+  }
+  footer .text-content .img-holder img {
+    max-width: 321.21px;
+    height: auto;
+  }
+  .text-content p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    p {
+      margin: 0 0 0;
+      font-size: 14px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+    footer {
+      padding: 60px 0;
+    }
+  }
+  .cardBox .icon {
+    margin-bottom: 18.6px;
+  }
+  .footer-text {
+    max-width: 464px;
+    margin: 40px auto 0;
+  }
+  .bgImg2 {
+    max-width: 84%;
+  }
+  .hero-main .img-holder img {
+    height: auto;
+  }
+  .hero-main .img-holder .order {
+    right: -14px;
+  }
+  .hero-main .img-holder .dashboard {
+    left: 0;
+  }
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      top: 100px;
+    }
+    50% {
+      top: 20px;
+    }
+  }
+
+  @keyframes MoveUpDown2 {
+    0%,
+    100% {
+      top: 100px;
+    }
+    50% {
+      top: 40px;
+    }
+  }
+  .hero-main .img-holder .order {
+    max-width: 187px;
+  }
+  .hero-main .img-holder .iphone {
+    max-width: 100%;
+  }
+  .shariha .caption p br {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mySwiper .swiper-pagination {
+    bottom: -50px;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 8px !important;
+  }
+  .content-slider {
+    padding-bottom: 60px;
+  }
+  .content-slider .mySwiper .swiper-pagination {
+    bottom: 0;
+  }
+
+  .mySwiper .swiper-pagination {
+    bottom: 22px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+  }
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-content {
+    padding-bottom: 60px;
+  }
+  .mySwiper .swiper-slide {
+    min-height: 100vh;
+  }
+  .cardBox {
+    text-align: center;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text-content p strong::before {
+    bottom: 7.5px;
+  }
+  .cardBox.cardBox p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .navbar a img {
+    height: 40px;
+  }
+  .btn {
+    max-width: 153px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscription-form .btn {
+    margin: 15px 0 0;
+  }
+  .inputGroup .icon-prepend {
+    width: 100%;
+  }
+  .caption h2,
+  .caption .h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 auto 8px;
+    max-width: 328px;
+  }
+  .caption p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .cardBox {
+    padding: 20px 30px;
+  }
+  .cardAnywhere {
+    padding: 30px;
+  }
+  .slider-content {
+    padding: 50px 0;
+  }
+  .content-slider p {
+    font-size: 16px;
+  }
+  .content-slider h2,
+  .content-slider .h2 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  footer .img-holder {
+    margin-bottom: 30px;
+  }
+  footer {
+    padding-bottom: 30px;
+  }
+  .cardAnywhere,
+  .cardBox,
+  .text-content,
+  .footer-text {
+    text-align: center;
+  }
+  footer .img-holder {
+    margin-left: 0;
+  }
+  .text-content h1,
+  .text-content .h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .subscription-form .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .subscription-form .btn {
+    max-width: 100%;
+    height: 36px;
+    font-size: 14px;
+  }
+  .inputGroup .icon-prepend .form-control {
+    height: 36px;
+  }
+  .subscription-form p.note br {
+    display: none;
+  }
+  .hero-main .img-holder {
+    margin: 30px 0;
+  }
+  .subscription-form h4,
+  .subscription-form .h4 {
+    margin-bottom: 12px;
+  }
+  .subscription-form .btn {
+    margin: 10px 0 0;
+  }
+  .subscription-form p.note {
+    max-width: 328px;
+    margin: 12px auto 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero-main {
+    padding: 60px 0 40px;
+  }
+  .shariha .caption {
+    max-width: 328px;
+    margin: 0 auto 30px;
+  }
+  .caption p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .cardBox {
+    margin-bottom: 30px;
+    padding: 20px 24px;
+    height: auto;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .cardAnywhere h2,
+  .cardAnywhere .h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+    max-width: 279px;
+    margin: 0 auto;
+  }
+  .cardAnywhere p {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    padding: 0 6px;
+  }
+  .cardAnywhere {
+    padding: 30px 24px;
+  }
+  .shariha [class*="col-"] {
+    margin-bottom: 0;
+  }
+  .content-slider h2,
+  .content-slider .h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .content-slider p {
+    font-size: 15px;
+  }
+  .content-slider .btn {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .mySwiper .swiper-pagination {
+    bottom: -100px;
+  }
+
+  .content-slider {
+    padding-bottom: 0;
+  }
+
+  .content-slider .mySwiper .swiper-pagination {
+    bottom: 0;
+  }
+
+  .content-slider .swiper-pagination-bullet {
+    margin: 0 60px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 8px !important;
+  }
+  .slider-content {
+    padding: 0 0;
+  }
+  footer .text-content h2,
+  footer .text-content .h2 {
+    font-size: 42px;
+  }
+  .content-slider {
+    padding: 80px 0 149px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .text-content h2,
+  footer .text-content .h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  footer .img-holder {
+    margin-bottom: 0;
+  }
+  .footer-text p {
+    margin-right: 0;
+  }
+
+  .footer-text img {
+    height: 24px;
+  }
+  .cardAnywhere {
+    margin: 0;
+  }
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+  }
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardBox .icon {
+    margin-bottom: 16px;
+  }
+  .img-slider img {
+    max-width: 324px;
+  }
+  .img-slider img.slide2 {
+    max-width: 279px;
+  }
+  .img-slider img.slide3 {
+    max-width: 302px;
+  }
+  footer .text-content h2 span {
+    display: none;
+  }
+  .bgImg2 {
+    max-width: 100%;
+  }
+  .mySwiper .swiper-slide {
+    height: 100%;
+    max-height: inherit;
+  }
+  .mySwiper {
+    max-height: 100%;
+  }
+  .mySwiper .swiper-pagination {
+    bottom: 64px;
+  }
+  .cardBox.cardBox p br {
+    display: none;
+  }
+  .cardBox.cardBox p {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .hero-main .img-holder .iphone {
+    max-width: 300px;
+  }
+  .hero-main .img-holder .order {
+    max-width: 121px;
+  }
+  .hero-main .img-holder .dashboard {
+    max-width: 130px;
+  }
+  .hero-main .img-holder {
+    max-width: 328px;
+    margin: 0 auto 30px;
+  }
+  .hero-main .img-holder .dashboard {
+    left: 12px;
+  }
+  .hero-main .img-holder .order {
+    right: 20px;
+  }
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      top: 20px;
+    }
+    50% {
+      top: 40px;
+    }
+  }
+
+  @keyframes MoveUpDown2 {
+    0%,
+    100% {
+      top: 60px;
+    }
+    50% {
+      top: 40px;
+    }
+  }
+}

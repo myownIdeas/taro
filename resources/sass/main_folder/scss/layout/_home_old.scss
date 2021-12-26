@@ -1,0 +1,257 @@
+.hero-main {
+  padding: 81px 0 68px;
+  background-color: #ffffff;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+  .bgImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  .img-holder {
+    text-align: center;
+    .iphone {
+      max-width: 282px;
+      position: relative;
+      z-index: 1;
+    }
+    .order {
+      max-width: 264px;
+      position: absolute;
+      right: 0;
+      top: 103px;
+      z-index: 2;
+      animation: MoveUpDown 8s linear infinite;
+    }
+    .dashboard {
+      position: absolute;
+      max-width: 285px;
+      left: 0;
+      top: 114px;
+      animation: MoveUpDown2 9s linear infinite;
+    }
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 103px;
+  }
+  50% {
+    top: 170px;
+  }
+}
+
+@keyframes MoveUpDown2 {
+  0%,
+  100% {
+    top: 170px;
+  }
+  50% {
+    top: 114px;
+  }
+}
+.text-content {
+  h1,
+  h2 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: -0.02em;
+
+    color: #221836;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #736392;
+    margin-bottom: 30px;
+    font-weight: 400;
+    strong {
+      font-weight: 400;
+      position: relative;
+      color: #221836;
+      padding: 0 2px;
+      display: inline-flex;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 9px;
+        background: #5f18eb;
+        opacity: 0.1;
+        position: absolute;
+        bottom: 2.5px;
+      }
+    }
+  }
+}
+.inputGroup {
+  display: flex;
+  .icon-prepend {
+    flex: 1;
+    position: relative;
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 18px;
+    }
+    .form-control {
+      height: 100%;
+      padding-left: 52px;
+    }
+  }
+}
+.subscription-form {
+  position: relative;
+  h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #221836;
+    margin-bottom: 16px;
+  }
+  .btn {
+    max-width: 126px;
+    margin-left: 16px;
+  }
+  p {
+    &.note {
+      margin: 0;
+      font-size: 14px;
+      line-height: 22px;
+      color: #897e9e;
+      margin-top: 16px;
+    }
+  }
+}
+
+.img-holder {
+  margin-left: 65px;
+  position: relative;
+  max-width: 714px;
+}
+
+.caption {
+  text-align: center;
+  max-width: 770px;
+  margin: 0 auto 60px;
+  h2 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #221836;
+    margin: 0 auto 30px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #5f18eb;
+    max-width: 573px;
+    margin: 0 auto;
+  }
+}
+.shariha {
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #f6f3ff 100%);
+  padding: 90px 0;
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+}
+.slider-content {
+  padding: 160px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 243, 255, 0) 0%,
+    #f6f3ff 52.08%,
+    rgba(246, 243, 255, 0) 100%
+  );
+}
+.content-slider {
+  .step {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5f18eb;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+    color: #221836;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #736392;
+    margin-bottom: 16px;
+    max-width: 400px;
+  }
+  .btn {
+    max-width: 126px;
+  }
+}
+
+.mySwiper {
+  max-height: 100vh;
+  .swiper-slide {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+.hero-main .text-content img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-main .img-holder {
+  margin: 40px 0;
+}
+.cardOverlay .row {
+  position: relative;
+  z-index: 9;
+}
+
+.bgImg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  max-width: 100%;
+}
+
+.img1 {
+  max-width: 588px;
+}
+
+.slide2.img2 {
+  max-width: 555px;
+}
+.slide3.img3 {
+  max-width: 611px;
+}
