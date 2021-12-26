@@ -67813,13 +67813,13 @@ function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "images/counter.svg",
+    src: "frontend/images/counter.svg",
     alt: "",
     className: "counter"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Anywhere, Anytime:"), "Pay in Four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Split purchases into four equal payments over three months with ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Pakistan's first licensed"), "  and Shariah compliant  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "BNPL provider "), "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "img-holder d-block d-lg-none"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/shapeFooter.svg",
+    src: "frontend/images/imgFooter.png",
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: "",
@@ -67860,11 +67860,48 @@ function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/logoWhite.svg",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uFFFD 2021 Taro. All rights reserved"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 2021 Taro. All rights reserved"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/shapeFooter.svg",
     alt: "",
-    className: "shapefooter"
-  }));
+    className: "shapefooter d-none d-xl-block"
+  })) // <footer>
+  //     <div className="container">
+  //         <div className="row align-items-center">
+  //             <div className="col-lg-6">
+  //                 <div className="text-content">
+  //                     <img src="frontend/images/counter.svg" alt="" className='counter' />
+  //                     <h2><span> Anywhere, Anytime:</span>
+  //                         Pay in Four</h2>
+  //                     <p>Split purchases into four equal payments over three months with <strong>Pakistan’s first licensed</strong>  and Shariah compliant  <strong>BNPL provider </strong>  </p>
+  //                     <div className="img-holder d-block d-lg-none">
+  //                         <img src="frontend/images/imgFooter.png" alt="" />
+  //                     </div>  <form action="" className='subscription-form'>
+  //                         <h4>Subscribe to get early access</h4>
+  //                         <div className="inputGroup">
+  //                             <div className="icon-prepend">
+  //                                 <input type="text" className='form-control' placeholder='Your email address' />
+  //                                 <i><img src={iconEnvelope} alt="" /></i>
+  //                             </div>
+  //                             <button className='btn btn-light'>Subscribe</button>
+  //                         </div>
+  //                         <p className="note">No spam, notifications only about new products and updates. <br /> You can always unsubscribe.</p>
+  //                     </form>
+  //                 </div>
+  //             </div>
+  //             <div className="col-lg-6 d-lg-block d-none">
+  //                 <div className="img-holder">
+  //                     <img src="frontend/images/imgFooter.png" alt="" />
+  //                 </div>
+  //             </div>
+  //         </div>
+  //         <div className="footer-text">
+  //             <img src={LogoWhite} alt="" />
+  //             <p>© 2021 Taro. All rights reserved</p>
+  //         </div>
+  //     </div>
+  //     <img src="frontend/images/shapeFooter.svg" alt="" className='shapefooter' />
+  // </footer>
+  ;
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -68068,7 +68105,7 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/counter.svg",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Pay in Four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Split purchases into four equal payments over three months with ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Pakistan\uFFFDs first licensed"), "  and Shariah compliant  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "BNPL provider "), "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Pay in Four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Split purchases into four equal payments over three months with ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Pakistan\u2019s first licensed"), "  and Shariah compliant  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "BNPL provider "), "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "img-holder d-block d-lg-none"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/iPhone2.png",
@@ -68114,7 +68151,7 @@ function Home() {
     className: "img-holder d-none d-lg-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/iPhone.png",
-    alt: "",
+    alt: "iPhone.png",
     className: "iphone"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "frontend/images/dashboard.png",
@@ -68413,8 +68450,8 @@ if (document.getElementById('app')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\taro.com\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\taro.com\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\taro\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\taro\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

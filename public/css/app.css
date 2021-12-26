@@ -22672,7 +22672,6 @@ footer {
   padding: 72px 0 60px;
   color: #fff;
   position: relative;
-  overflow: hidden;
 }
 
 footer .container {
@@ -23033,6 +23032,10 @@ footer .shapefooter {
 
 .slide3.img3 {
   max-width: 611px;
+}
+
+.full-height {
+  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -23486,7 +23489,7 @@ footer .shapefooter {
 
 @media (max-width: 767px) {
   .mySwiper .swiper-pagination {
-    bottom: -50px;
+    bottom: 0;
   }
 
   .swiper-pagination-bullet {
@@ -23542,6 +23545,15 @@ footer .shapefooter {
 
   .cardBox.cardBox p {
     max-width: 100%;
+  }
+
+  .mySwiper .swiper-pagination {
+    bottom: 0;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    transform: inherit;
   }
 }
 
@@ -23764,7 +23776,7 @@ footer .shapefooter {
   }
 
   .content-slider {
-    padding: 80px 0 149px;
+    padding: 80px 0 60px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -23831,7 +23843,7 @@ footer .shapefooter {
   }
 
   .mySwiper .swiper-slide {
-    height: 100%;
+    height: 600px !important;
     max-height: inherit;
   }
 
