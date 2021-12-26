@@ -22540,8 +22540,10 @@ textarea.form-control {
   border-radius: 8px;
 }
 
+.btn.btn-primary:focus,
 .btn.btn-primary:hover {
   background: linear-gradient(81.12deg, #7417eb 0%, #551df7 52.79%, #5e17eb 100%);
+  color: #fff;
 }
 
 .btn.btn-light {
