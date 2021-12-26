@@ -53,7 +53,24 @@
                 sensitivity:1,
                 releaseOnEdges:true,
             },
+            breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "horizental",
 
+            
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          992: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+       
         });
     </script>
 </html>
