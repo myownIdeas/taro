@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Routes,HashRouter,Link, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, HashRouter, Link, Route } from "react-router-dom";
 
 
 import Home from "./Home.js";
@@ -11,16 +11,18 @@ export default class Main extends Component {
 
     render() {
         return (
-        <React.Fragment>
-            <Router>
-                <HeaderWrap />
-                    <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route exit path="/about" element={<About />}></Route>
-                    </Routes>
-                <FooterWrap />
-            </Router>
-        </React.Fragment>
+            <React.Fragment>
+                <Router>
+                    <HeaderWrap />
+                    <div className='wrapper'>
+                        <Routes>
+                            <Route path="/" element={<Home />}></Route>
+                            <Route exit path="/about" element={<About />}></Route>
+                        </Routes>
+                        <FooterWrap />
+                    </div>
+                </Router>
+            </React.Fragment>
 
         )
     }
