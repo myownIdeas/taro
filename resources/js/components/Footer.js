@@ -34,7 +34,33 @@ function Footer() {
     }
 
     return (
-        <footer>
+        <>
+            <footer className='site-footer'>
+                <div className='container-fluid container-taro'>
+                    <div className='sf-content'>
+                        <img src="frontend/images/counters-white.svg" alt="" />
+                        <h2>Anywhere, Anytime: Pay in Four</h2>
+                        <p>Split purchases into four equal payments over three months with <span className='text-white'>Pakistan's first licensed</span> and Shariah compliant <span className='text-white'>BNPL provider</span></p>
+                        <h6>Subscribe to get early access</h6>
+                        <div className='pfc-subscribe'>
+                            <form action="" onSubmit={(e) => { submitForm(e) }}>
+                                <div className='pfc-subscribe-form'>
+                                    <div className='form-group input-field-wrap'>
+                                        <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
+                                        <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                    </div>
+                                    <div className='form-group'>
+                                        <button type="submit" className='btn btn-light'>Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                        </div>
+                    </div>
+                </div>
+                <img src="frontend/images/shapeFooter.svg" alt="" className='circles-shape d-none d-xl-block' />
+            </footer>
+        {/* <footer>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
@@ -74,9 +100,9 @@ function Footer() {
                 </div>
             </div>
             <img src="frontend/images/shapeFooter.svg" alt="" className='shapefooter d-none d-xl-block' />
-        </footer>
+        </footer> */}
 
-        // <footer>
+        {/* // <footer>
         //     <div className="container">
         //         <div className="row align-items-center">
         //             <div className="col-lg-6">
@@ -115,7 +141,8 @@ function Footer() {
         //         </div>
         //     </div>
         //     <img src="frontend/images/shapeFooter.svg" alt="" className='shapefooter' />
-        // </footer>
+        // </footer> */}
+        </>
     )
 }
 

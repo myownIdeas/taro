@@ -53,7 +53,7 @@ function Home() {
 
     return (
         <>
-            <section className="hero-main">
+            {/* <section className="hero-main">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-5">
@@ -98,10 +98,68 @@ function Home() {
                 <img src="frontend/images/ellipse2.svg" alt="" className="bgImg2" />
 
 
+            </section> */}
+
+            <section className='page-sec complaint-sec'>
+                <div className='container-fluid container-taro'>
+                    <header className='page-sec-header'>
+                        <h2>Shariah compliant, flexible, and easy to use.</h2>
+                        <p>We're changing the way you shop, and enabling you to pay on your own terms</p>
+                    </header>
+                    <div className='row'>
+                        <div className='col-md-4'>
+                            <div className='cs-card'>
+                                <div className="cs-card-icon">
+                                    <img src="frontend/images/shopingBag.svg" alt="" />
+                                </div>
+                                <h6>Freedom</h6>
+                                <p>Enjoy the freedom of paying how you want, when you want. By using Taro, you're able to enjoy the things you want sooner.</p>
+                            </div>
+                        </div>
+                        <div className='col-md-4'>
+                            <div className='cs-card'>
+                                <div className="cs-card-icon">
+                                    <img src="frontend/images/hand.svg" alt="" />
+                                </div>
+                                <h6>Pay in 4</h6>
+                                <p>Our proprietary approval process has no impact your credit. Plus, the more you shop, the more your credit grows.</p>
+                            </div>
+                        </div>
+                        <div className='col-md-4'>
+                            <div className='cs-card'>
+                                <div className="cs-card-icon">
+                                    <img src="frontend/images/smartphone.svg" alt="" />
+                                </div>
+                                <h6>No impact your credit</h6>
+                                <p>Pay in 4 with your favorite retailers through our app, website, or in-store, with no interest or fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='pay-four-card'>
+                        <h3>Anywhere, Anytime: Pay in Four</h3>
+                        <div className='pfc-content'>
+                            <p>Leverage Taro to split payments at all your favorite retailers and manage your spending on the web or through our app, anytime & anywhere.</p>
+                            <div className='pfc-subscribe'>
+                                <form action="" onSubmit={(e) => { submitForm(e) }}>
+                                    <div className='pfc-subscribe-form'>
+                                        <div className='form-group input-field-wrap'>
+                                            <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
+                                            <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                        </div>
+                                        <div className='form-group'>
+                                            <button type="submit" className='btn btn-light'>Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                            </div>
+                        </div>
+                        <img src="frontend/images/circles-shape.svg" alt="" className='circles-shape' />
+                    </div>
+                </div>
             </section>
 
-
-            <section className='shariha'>
+            {/* <section className='shariha'>
                 <div className="container">
                     <div className="caption">
                         <h2>Shariah compliant, <br />flexible, and easy to use. </h2>
@@ -154,10 +212,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
-            <section className='slider-content'>
+            {/* <section className='slider-content'>
                 <div className='d-none d-md-block'>
                     <div className="swiper mySwiper ">
                         <div className="swiper-wrapper">
@@ -242,11 +300,11 @@ function Home() {
 
                     </div>
 
-                </div>
+                </div> */}
 
                 {/* MOBILE SLIDER */}
 
-                <div className='d-block d-md-none'>
+                {/* <div className='d-block d-md-none'>
                     <div className="swiper mySwiperMobile">
                         <div className="swiper-wrapper">
                             <div className="swiper-slide">
@@ -330,7 +388,7 @@ function Home() {
 
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
         </>

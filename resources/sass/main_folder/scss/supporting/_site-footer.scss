@@ -1,0 +1,38 @@
+.site-footer {
+    @extend .position-relative,
+    .overflow-hidden;
+    background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 45.31%, #8000FF 76.04%);
+    padding: 7.875rem 0;
+
+    .circles-shape {
+        @extend .position-absolute;
+        right: 0;
+        top: 0;
+        pointer-events: none;
+        width: 60rem;
+        height: 60rem;
+    }
+
+    .sf-content {
+        max-width: 610px;
+
+        h2 {
+            @extend .font-weight-500,
+            .my-3;
+            font-size: 3.75rem;
+        }
+
+        h6 {
+            @extend .text-uppercase,
+            .mb-3;
+            font-size: 14px;
+        }
+
+        &>p {
+            font-size: 1.25rem;
+            color: #CDBAFB;
+            margin-bottom: 2rem;
+            max-width: 470px;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+html {
+    @include media-breakpoint-down(lg) {
+        font-size: 14px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 11px;
+    }
+}
+
+body {
+    font-family: 'Poppins', $system-font-stack;
+}
+
+img {
+    max-width: 100%;
+}
+
+.font-weight {
+    &-500 {
+        font-weight: 500;
+    }
+
+    &-600 {
+        font-weight: 600;
+    }
+}
+
+.container-taro {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.page-sec {
+    padding: 5rem 0;
+
+    &-header {
+        @extend .text-center;
+        margin-bottom: 2.75rem;
+
+        h2,
+        p {
+            @extend .font-weight-500,
+            .mx-auto;
+        }
+
+        h2 {
+            color: #221836;
+            margin: 0;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 3.75rem;
+                max-width: 770px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                max-width: 500px;
+            }
+
+            @include media-breakpoint-only(md) {
+                font-size: 2.875rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 26px;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #5F18EB;
+            margin: 1.875rem 0 0 0;
+
+            @include media-breakpoint-up(lg) {
+                max-width: 585px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                max-width: 470px;
+            }
+
+        }
+    }
+}
+
+.btn {
+    @extend .font-weight-500;
+    border: 0;
+    border-radius: 8px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 14px;
+    }
+
+    &.btn-primary {
+        background: linear-gradient(81.12deg,
+                #5e17eb 0%,
+                #551df7 52.79%,
+                #7417eb 100%);
+        box-shadow: 0px 1px 1px rgba(94, 23, 235, 0.2);
+
+        &:focus,
+        &:hover {
+            background: linear-gradient(81.12deg,
+                    #7417eb 0%,
+                    #551df7 52.79%,
+                    #5e17eb 100%);
+        }
+    }
+
+    &.btn-light {
+        background: linear-gradient(180deg, #ffffff 0%, #e4dcec 100%),
+            linear-gradient(81.12deg, #5e17eb 0%, #551df7 52.79%, #7417eb 100%);
+        box-shadow: 0px 1px 1px rgba(47, 10, 124, 0.7);
+        color: #5f18eb;
+    }
+}
+
+.form-group {
+    @extend .position-relative;
+    margin-bottom: 1rem;
+}
+
+.pfc-subscribe {
+    @include media-breakpoint-up(md) {
+        max-width: 470px;
+    }
+
+    &-form {
+        @extend .d-md-flex;
+
+        .input-field-wrap {
+            @include media-breakpoint-up(md) {
+                width: calc(100% - 16px - 7.875rem);
+            }
+
+            .icon-envelope {
+                @extend .position-absolute;
+                left: 1.25rem;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                max-width: 1.5rem;
+            }
+
+            input {
+                height: 3.25rem;
+                box-shadow: inset 0px 1px 2px rgba(94, 23, 235, 0.3);
+                border-radius: 8px;
+                padding-left: 3.25rem;
+            }
+        }
+
+        .btn-light {
+            @extend .d-flex,
+            .align-items-center,
+            .justify-content-center,
+            .ms-md-3;
+            height: 3.25rem;
+            max-width: inherit;
+
+            @include media-breakpoint-up(md) {
+                width: 7.875rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    p {
+        color: #CDBAFB;
+        margin-bottom: 0;
+        font-size: 14px;
+        max-width: 95%;
+
+        @include media-breakpoint-down(lg) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

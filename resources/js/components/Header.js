@@ -6,12 +6,12 @@ class Header extends Component{
     render(){
 
         return (
-            <header>
-                <div className="container">
-                    <div className="navbar">
+            <header className='site-header'>
+                <div className="container-fluid container-taro">
+                    <div className="site-logo">
                         <Link to="#" className='brandName'><img src="frontend/images/logo.svg" alt="" /></Link>
-                        <Link to="#" className='btn btn-primary'>Get Early Access</Link>
                     </div>
+                    <Link to="#" className='btn btn-primary'>Get Early Access</Link>
                 </div>
             </header>
         )
