@@ -7905,6 +7905,7 @@ fieldset:disabled .btn {
 }
 
 .d-block,
+.steps-slider-sec .ss-slide-content-img,
 .pay-four-card .circles-shape {
   display: block !important;
 }
@@ -7927,6 +7928,13 @@ fieldset:disabled .btn {
 
 .d-flex,
 .site-footer .sf-copyrights,
+.steps-slider-sec .ss-slide-content .btn,
+.steps-slider-sec .ss-slide > .container-fluid,
+.steps-slider-sec .ss-slide > .container-sm,
+.steps-slider-sec .ss-slide > .container-md,
+.steps-slider-sec .ss-slide > .container-lg,
+.steps-slider-sec .ss-slide > .container-xl,
+.steps-slider-sec .ss-slide > .container-xxl,
 .site-header .btn,
 .site-header > .container-fluid,
 .site-header > .container-sm,
@@ -7943,7 +7951,8 @@ fieldset:disabled .btn {
 }
 
 .d-none,
-.site-footer .circles-shape {
+.site-footer .circles-shape,
+.steps-slider-sec .ss-slide-img {
   display: none !important;
 }
 
@@ -8301,6 +8310,7 @@ fieldset:disabled .btn {
 }
 
 .justify-content-center,
+.steps-slider-sec .ss-slide-content .btn,
 .site-header .btn,
 .pfc-subscribe-form .btn-light {
   justify-content: center !important;
@@ -8308,6 +8318,12 @@ fieldset:disabled .btn {
 
 .justify-content-between,
 .site-footer .sf-copyrights,
+.steps-slider-sec .ss-slide > .container-fluid,
+.steps-slider-sec .ss-slide > .container-sm,
+.steps-slider-sec .ss-slide > .container-md,
+.steps-slider-sec .ss-slide > .container-lg,
+.steps-slider-sec .ss-slide > .container-xl,
+.steps-slider-sec .ss-slide > .container-xxl,
 .pay-four-card .pfc-content,
 .site-header > .container-fluid,
 .site-header > .container-sm,
@@ -8336,6 +8352,13 @@ fieldset:disabled .btn {
 
 .align-items-center,
 .site-footer .sf-copyrights,
+.steps-slider-sec .ss-slide-content .btn,
+.steps-slider-sec .ss-slide > .container-fluid,
+.steps-slider-sec .ss-slide > .container-sm,
+.steps-slider-sec .ss-slide > .container-md,
+.steps-slider-sec .ss-slide > .container-lg,
+.steps-slider-sec .ss-slide > .container-xl,
+.steps-slider-sec .ss-slide > .container-xxl,
 .site-header .btn,
 .site-header > .container-fluid,
 .site-header > .container-sm,
@@ -8941,6 +8964,8 @@ fieldset:disabled .btn {
 .text-uppercase,
 .site-footer .sf-content h6,
 .site-footer .sf-content .h6,
+.steps-slider-sec .ss-slide-content h6,
+.steps-slider-sec .ss-slide-content .h6,
 .complaint-sec .cs-card h6,
 .complaint-sec .cs-card .h6 {
   text-transform: uppercase !important;
@@ -10558,7 +10583,8 @@ fieldset:disabled .btn {
   }
 
   .d-lg-block,
-  .site-footer .circles-shape {
+  .site-footer .circles-shape,
+  .steps-slider-sec .ss-slide-img {
     display: block !important;
   }
 
@@ -10587,7 +10613,8 @@ fieldset:disabled .btn {
     display: inline-flex !important;
   }
 
-  .d-lg-none {
+  .d-lg-none,
+  .steps-slider-sec .ss-slide-content-img {
     display: none !important;
   }
 
@@ -12580,6 +12607,8 @@ img {
 .font-weight-500,
 .site-footer .sf-content h2,
 .site-footer .sf-content .h2,
+.steps-slider-sec .ss-slide-content h3,
+.steps-slider-sec .ss-slide-content .h3,
 .pay-four-card h3,
 .pay-four-card .h3,
 .btn,
@@ -12590,6 +12619,8 @@ img {
 }
 
 .font-weight-600,
+.steps-slider-sec .ss-slide-content h6,
+.steps-slider-sec .ss-slide-content .h6,
 .complaint-sec .cs-card h6,
 .complaint-sec .cs-card .h6 {
   font-weight: 600;
@@ -12968,6 +12999,49 @@ img {
   .pay-four-card .pfc-content > p {
     font-size: 15px;
   }
+}
+
+.steps-slider-sec .ss-slide {
+  background: linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #F6F3FF 52.08%, rgba(246, 243, 255, 0) 100%);
+}
+
+.steps-slider-sec .ss-slide > .container-fluid,
+.steps-slider-sec .ss-slide > .container-sm,
+.steps-slider-sec .ss-slide > .container-md,
+.steps-slider-sec .ss-slide > .container-lg,
+.steps-slider-sec .ss-slide > .container-xl,
+.steps-slider-sec .ss-slide > .container-xxl {
+  min-height: 100vh;
+}
+
+.steps-slider-sec .ss-slide-content {
+  max-width: 400px;
+}
+
+.steps-slider-sec .ss-slide-content h6,
+.steps-slider-sec .ss-slide-content .h6 {
+  color: #5F18EB;
+}
+
+.steps-slider-sec .ss-slide-content h3,
+.steps-slider-sec .ss-slide-content .h3 {
+  color: #221836;
+  font-size: 3.75rem;
+  margin: 0.5rem 0 1.125rem 0;
+}
+
+.steps-slider-sec .ss-slide-content p {
+  color: #736392;
+  font-size: 1.25rem;
+}
+
+.steps-slider-sec .ss-slide-content .btn {
+  width: 7.875rem;
+  height: 3.25rem;
+}
+
+.steps-slider-sec .ss-slide:nth-child(odd) .ss-slide-img {
+  order: -1;
 }
 
 .site-footer {
