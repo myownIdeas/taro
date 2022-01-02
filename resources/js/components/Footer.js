@@ -39,8 +39,15 @@ function Footer() {
                 <div className='container-fluid container-taro'>
                     <div className='sf-content'>
                         <img src="frontend/images/counters-white.svg" alt="" />
-                        <h2>Anywhere, Anytime: Pay in Four</h2>
+                        <h2><span className='d-none d-sm-inline-block'>Anywhere, Anytime:</span> Pay in Four</h2>
                         <p>Split purchases into four equal payments over three months with <span className='text-white'>Pakistan's first licensed</span> and Shariah compliant <span className='text-white'>BNPL provider</span></p>
+                        <div className="sf-img">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="frontend/images/footer-img.svg" />
+                                <source media="(min-width:576px)" srcset="frontend/images/footer-img-tablet.svg" />
+                                <img src="frontend/images/footer-img-mobile.svg" alt="" />
+                            </picture>
+                        </div>
                         <h6>Subscribe to get early access</h6>
                         <div className='pfc-subscribe'>
                             <form action="" onSubmit={(e) => { submitForm(e) }}>
@@ -57,8 +64,12 @@ function Footer() {
                             <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
                         </div>
                     </div>
+                    <div className='sf-copyrights'>
+                        <img src="frontend/images/logo-white.svg" alt="" />
+                        <p>&copy; {(new Date().getFullYear())} Taro. All rights reserved</p>
+                    </div>
+                    <img src="frontend/images/footer-circles.svg" alt="" className='circles-shape' />
                 </div>
-                <img src="frontend/images/shapeFooter.svg" alt="" className='circles-shape d-none d-xl-block' />
             </footer>
         {/* <footer>
             <div className="container">

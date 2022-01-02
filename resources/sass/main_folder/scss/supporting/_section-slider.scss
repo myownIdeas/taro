@@ -1,0 +1,59 @@
+.steps-slider-sec {
+
+    .ss-slide {
+        background: linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #F6F3FF 52.08%, rgba(246, 243, 255, 0) 100%);
+
+        &>.container-fluid {
+            @extend .d-flex,
+            .align-items-center,
+            .justify-content-between;
+            min-height: 100vh;
+        }
+
+        &-content {
+            max-width: 400px;
+
+            &-img {
+                @extend .d-block,
+                .d-lg-none;
+            }
+
+            h6 {
+                @extend .font-weight-600,
+                .text-uppercase;
+                color: #5F18EB;
+            }
+
+            h3 {
+                @extend .font-weight-500;
+                color: #221836;
+                font-size: 3.75rem;
+                margin: .5rem 0 1.125rem 0;
+            }
+
+            p {
+                color: #736392;
+                font-size: 1.25rem;
+            }
+
+            .btn {
+                @extend .d-flex,
+                .align-items-center,
+                .justify-content-center;
+                width: 7.875rem;
+                height: 3.25rem;
+            }
+        }
+
+        &-img {
+            @extend .d-none,
+            .d-lg-block;
+        }
+
+        &:nth-child(odd) {
+            .ss-slide-img {
+                order: -1;
+            }
+        }
+    }
+}
