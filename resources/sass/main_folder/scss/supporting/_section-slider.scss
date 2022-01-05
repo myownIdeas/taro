@@ -7,41 +7,101 @@
             @extend .d-flex,
             .align-items-center,
             .justify-content-between;
-            min-height: 100vh;
+
+
+            @include media-breakpoint-up(sm) {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                min-height: 100vh;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
         }
 
         &-content {
-            max-width: 400px;
+
+            @include media-breakpoint-up(lg) {
+                max-width: 400px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                max-width: 480px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             &-img {
                 @extend .d-block,
                 .d-lg-none;
+
+                @include media-breakpoint-down(lg) {
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
             }
 
             h6 {
                 @extend .font-weight-600,
                 .text-uppercase;
                 color: #5F18EB;
+                font-size: 14px;
             }
 
             h3 {
                 @extend .font-weight-500;
                 color: #221836;
-                font-size: 3.75rem;
                 margin: .5rem 0 1.125rem 0;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 3.75rem;
+                }
+
+                @include media-breakpoint-between(sm, lg) {
+                    font-size: 40px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 24px;
+                }
             }
 
             p {
                 color: #736392;
-                font-size: 1.25rem;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.25rem;
+                }
+
+                @include media-breakpoint-between(sm, lg) {
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 15px;
+                }
             }
 
             .btn {
-                @extend .d-flex,
+                @extend .d-inline-flex,
                 .align-items-center,
                 .justify-content-center;
                 width: 7.875rem;
                 height: 3.25rem;
+
+                @include media-breakpoint-down(lg) {
+                    margin-top: 1rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                }
             }
         }
 

@@ -1,6 +1,7 @@
 .site-footer {
     @extend .position-relative,
-    .overflow-hidden;
+    .overflow-hidden,
+    .text-white;
     background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 45.31%, #8000FF 76.04%);
 
     @include media-breakpoint-up(lg) {
@@ -67,12 +68,6 @@
             @include media-breakpoint-down(sm) {
                 font-size: 40px;
             }
-        }
-
-        h6 {
-            @extend .text-uppercase,
-            .mb-3;
-            font-size: 14px;
         }
 
         &>p {

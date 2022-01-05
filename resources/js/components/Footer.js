@@ -48,10 +48,10 @@ function Footer() {
                                 <img src="frontend/images/footer-img-mobile.svg" alt="" />
                             </picture>
                         </div>
-                        <h6>Subscribe to get early access</h6>
-                        <div className='pfc-subscribe'>
+                        <div className='subscribe-widget'>
+                            <h6>Subscribe to get early access</h6>
                             <form action="" onSubmit={(e) => { submitForm(e) }}>
-                                <div className='pfc-subscribe-form'>
+                                <div className='subscribe-widget-form'>
                                     <div className='form-group input-field-wrap'>
                                         <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
                                         <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />

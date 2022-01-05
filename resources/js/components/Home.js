@@ -53,6 +53,39 @@ function Home() {
 
     return (
         <>
+            
+            <section className='hero-sec home-hero-sec'>
+                <div className='container-fluid container-taro'>
+                    <div className='hs-content'>
+                        <img src="frontend/images/counter.svg" alt="" />
+                        <h1>Pay in Four</h1>
+                        <p>Split purchases into four equal payments over three months with <span className='highlighted'><span>Pakistan's first licensed</span></span> and Shariah compliant <span className='highlighted'><span>BNPL provider</span></span></p>
+                        <div className='hhs-banner'>
+                            <img src="frontend/images/home-hero-payments-thumb.png" alt="" className='payments-thumb' />
+                            <img src="frontend/images/home-hero-phone-thumb.png" alt="" className='phone-thumb' />
+                            <img src="frontend/images/home-hero-orders-thumb.png" alt="" className='orders-thumb' />
+                            <img src="frontend/images/home-hero-sec-circles.svg" alt="" class="home-hero-circles" />
+                        </div>
+                        <div className='subscribe-widget'>
+                            <h6>Subscribe to get early access</h6>
+                            <form action="" onSubmit={(e) => { submitForm(e) }}>
+                                <div className='subscribe-widget-form'>
+                                    <div className='form-group input-field-wrap'>
+                                        <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
+                                        <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                    </div>
+                                    <div className='form-group'>
+                                        <button type="submit" className='btn btn-primary'>Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                        </div>
+                    </div>
+                </div>
+                <img src="frontend/images/hero-bg.png" alt="" class="hero-bg" />
+            </section>
+
             {/* <section className="hero-main">
                 <div className="container">
                     <div className="row align-items-center">
@@ -139,9 +172,9 @@ function Home() {
                         <h3>Anywhere, Anytime: Pay in Four</h3>
                         <div className='pfc-content'>
                             <p>Leverage Taro to split payments at all your favorite retailers and manage your spending on the web or through our app, anytime & anywhere.</p>
-                            <div className='pfc-subscribe'>
+                            <div className='subscribe-widget'>
                                 <form action="" onSubmit={(e) => { submitForm(e) }}>
-                                    <div className='pfc-subscribe-form'>
+                                    <div className='subscribe-widget-form'>
                                         <div className='form-group input-field-wrap'>
                                             <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
                                             <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
@@ -159,20 +192,20 @@ function Home() {
                 </div>
             </section>
 
-            <section className='page-sec steps-slider-sec'>
+            <section className='steps-slider-sec'>
                 <div className="ss-slide">
                     <div className='container-fluid container-taro'>
                         <div className='ss-slide-content'>
                             <h6>Step 1</h6>
                             <h3>Fill your cart</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img1.svg" alt="" />
+                                <img src="frontend/images/step-slider-img1.png" alt="" />
                             </div>
                             <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img1.svg" alt="" />
+                            <img src="frontend/images/step-slider-img1.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -182,13 +215,13 @@ function Home() {
                             <h6>Step 2</h6>
                             <h3>Choose how you pay</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img2.svg" alt="" />
+                                <img src="frontend/images/step-slider-img2.png" alt="" />
                             </div>
                             <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img2.svg" alt="" />
+                            <img src="frontend/images/step-slider-img2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -198,13 +231,13 @@ function Home() {
                             <h6>Step 3</h6>
                             <h3>Make easy monthly payments</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img3.svg" alt="" />
+                                <img src="frontend/images/step-slider-img3.png" alt="" />
                             </div>
                             <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img3.svg" alt="" />
+                            <img src="frontend/images/step-slider-img3.png" alt="" />
                         </div>
                     </div>
                 </div>
