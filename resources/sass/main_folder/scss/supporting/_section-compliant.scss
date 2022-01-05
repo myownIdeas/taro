@@ -1,4 +1,6 @@
 .complaint-sec {
+    @extend .position-relative;
+    z-index: 2;
     background: linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #F6F3FF 100%);
 
     .cs-card {
@@ -141,7 +143,7 @@
         }
 
         &>p,
-        .pfc-subscribe {
+        .subscribe-widget {
             margin-top: 1.25rem;
         }
 

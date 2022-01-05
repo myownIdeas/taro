@@ -53,6 +53,39 @@ function Home() {
 
     return (
         <>
+            
+            <section className='hero-sec home-hero-sec'>
+                <div className='container-fluid container-taro'>
+                    <div className='hs-content'>
+                        <img src="frontend/images/counter.svg" alt="" />
+                        <h1>Pay in Four</h1>
+                        <p>Split purchases into four equal payments over three months with <span className='highlighted'><span>Pakistan's first licensed</span></span> and Shariah compliant <span className='highlighted'><span>BNPL provider</span></span></p>
+                        <div className='hhs-banner'>
+                            <img src="frontend/images/home-hero-payments-thumb.png" alt="" className='payments-thumb' />
+                            <img src="frontend/images/home-hero-phone-thumb.png" alt="" className='phone-thumb' />
+                            <img src="frontend/images/home-hero-orders-thumb.png" alt="" className='orders-thumb' />
+                            <img src="frontend/images/home-hero-sec-circles.svg" alt="" class="home-hero-circles" />
+                        </div>
+                        <div className='subscribe-widget'>
+                            <h6>Subscribe to get early access</h6>
+                            <form action="" onSubmit={(e) => { submitForm(e) }}>
+                                <div className='subscribe-widget-form'>
+                                    <div className='form-group input-field-wrap'>
+                                        <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
+                                        <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                    </div>
+                                    <div className='form-group'>
+                                        <button type="submit" className='btn btn-primary'>Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                        </div>
+                    </div>
+                </div>
+                <img src="frontend/images/hero-bg.png" alt="" class="hero-bg" />
+            </section>
+
             {/* <section className="hero-main">
                 <div className="container">
                     <div className="row align-items-center">
@@ -139,9 +172,9 @@ function Home() {
                         <h3>Anywhere, Anytime: Pay in Four</h3>
                         <div className='pfc-content'>
                             <p>Leverage Taro to split payments at all your favorite retailers and manage your spending on the web or through our app, anytime & anywhere.</p>
-                            <div className='pfc-subscribe'>
+                            <div className='subscribe-widget'>
                                 <form action="" onSubmit={(e) => { submitForm(e) }}>
-                                    <div className='pfc-subscribe-form'>
+                                    <div className='subscribe-widget-form'>
                                         <div className='form-group input-field-wrap'>
                                             <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
                                             <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />

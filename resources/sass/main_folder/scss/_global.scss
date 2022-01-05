@@ -10,6 +10,10 @@ html {
 
 body {
     font-family: 'Poppins', $system-font-stack;
+
+    &>#app {
+        overflow: hidden;
+    }
 }
 
 img {
@@ -121,9 +125,16 @@ img {
     margin-bottom: 1rem;
 }
 
-.pfc-subscribe {
+.subscribe-widget {
     @include media-breakpoint-up(md) {
         max-width: 470px;
+    }
+
+    h6 {
+        @extend .text-uppercase,
+        .mb-3,
+        .font-weight-600;
+        font-size: 14px;
     }
 
     &-form {
@@ -151,7 +162,7 @@ img {
             }
         }
 
-        .btn-light {
+        .btn {
             @extend .d-flex,
             .align-items-center,
             .justify-content-center,
