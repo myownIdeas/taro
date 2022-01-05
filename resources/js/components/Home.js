@@ -192,20 +192,20 @@ function Home() {
                 </div>
             </section>
 
-            <section className='page-sec steps-slider-sec'>
+            <section className='steps-slider-sec'>
                 <div className="ss-slide">
                     <div className='container-fluid container-taro'>
                         <div className='ss-slide-content'>
                             <h6>Step 1</h6>
                             <h3>Fill your cart</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img1.svg" alt="" />
+                                <img src="frontend/images/step-slider-img1.png" alt="" />
                             </div>
                             <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img1.svg" alt="" />
+                            <img src="frontend/images/step-slider-img1.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -215,13 +215,13 @@ function Home() {
                             <h6>Step 2</h6>
                             <h3>Choose how you pay</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img2.svg" alt="" />
+                                <img src="frontend/images/step-slider-img2.png" alt="" />
                             </div>
                             <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img2.svg" alt="" />
+                            <img src="frontend/images/step-slider-img2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -231,13 +231,13 @@ function Home() {
                             <h6>Step 3</h6>
                             <h3>Make easy monthly payments</h3>
                             <div className='ss-slide-content-img'>
-                                <img src="frontend/images/step-slider-img3.svg" alt="" />
+                                <img src="frontend/images/step-slider-img3.png" alt="" />
                             </div>
                             <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
                             <a class="btn btn-primary" href="/">Subscribe</a>
                         </div>
                         <div className='ss-slide-img'>
-                            <img src="frontend/images/step-slider-img3.svg" alt="" />
+                            <img src="frontend/images/step-slider-img3.png" alt="" />
                         </div>
                     </div>
                 </div>
