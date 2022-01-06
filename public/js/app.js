@@ -67823,12 +67823,12 @@ function Footer() {
     className: "sf-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
     media: "(min-width:992px)",
-    srcset: "frontend/images/footer-img.svg"
+    srcset: "frontend/images/taro/app-footer.svg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
     media: "(min-width:576px)",
-    srcset: "frontend/images/footer-img-tablet.svg"
+    srcset: "frontend/images/taro/app-footer.svg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/footer-img-mobile.svg",
+    src: "frontend/images/taro/app-footer.svg",
     alt: ""
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subscribe-widget"
@@ -68056,7 +68056,7 @@ function Home() {
 
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(url + 'api/saveEmail', data).then(function (res) {
       clearState();
-      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Good job!", "You Email is Subscribed !", "success");
+      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Thank you!", "Thanks for joining Taro, we 'll be back to you soon with our new exciting new features!");
     }); //  }
   }
 
@@ -68208,7 +68208,7 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Step 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Fill your cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-content-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img1.png",
+    src: "frontend/images/taro/app-step1.svg",
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "class": "btn btn-primary",
@@ -68216,7 +68216,7 @@ function Home() {
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img1.png",
+    src: "frontend/images/taro/app-step1.svg",
     alt: ""
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide"
@@ -68227,7 +68227,7 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Step 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Choose how you pay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-content-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img2.png",
+    src: "frontend/images/taro/app-step2.svg",
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Select the payment schedule that works for you, then confirm your loan. We\u2019ll never charge more than you see up front."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "class": "btn btn-primary",
@@ -68235,7 +68235,7 @@ function Home() {
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img2.png",
+    src: "frontend/images/taro/app-step2.svg",
     alt: ""
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide"
@@ -68246,7 +68246,7 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Step 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Make easy monthly payments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-content-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img3.png",
+    src: "frontend/images/taro/app-step3.svg",
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Download the Taro app or sign in at taro.pk. We\u2019ll send you email and text reminders so you never miss a payment."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "class": "btn btn-primary",
@@ -68254,7 +68254,7 @@ function Home() {
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/step-slider-img3.png",
+    src: "frontend/images/taro/app-step3.svg",
     alt: ""
   }))))));
 }
