@@ -152,6 +152,10 @@
             @include media-breakpoint-up(lg) {
                 margin-top: 1.125rem;
             }
+
+            @media screen and (max-width:380px) {
+                font-size: 11px;
+            }
         }
     }
 }
