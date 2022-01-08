@@ -31,7 +31,7 @@
     <div class="left-sidebar">
         <div class="logo-area">
             <div class="main-logo">
-                <a href="index.html"><img src="images/soft-bank.png" alt="images" /></a>
+                <a href="{{URL::to('admin/dashboard')}}"><img src="images/soft-bank.png" alt="images" /></a>
             </div>
         </div>
         <div class="sidebar-menu">
@@ -84,7 +84,7 @@
                         </a>
                     </div>
                     <div class="profile">
-                        <a href="#">
+                        <a href="{{URL::to('admin/dashboard')}}">
                             <img src="images/profile.png" alt="images" />
                         </a>
                     </div>
