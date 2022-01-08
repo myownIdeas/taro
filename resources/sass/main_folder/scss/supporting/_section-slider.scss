@@ -1,4 +1,8 @@
 .steps-slider-sec {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 2rem;
+    }
+
     .swiper-slide {
         @extend .d-flex,
         .align-items-center;
@@ -172,7 +176,6 @@
         &-bullet {
             width: 6px;
             height: 6px;
-            margin: 8px auto !important;
 
             &.swiper-pagination-bullet-active {
                 width: 10px;
@@ -186,7 +189,21 @@
         }
 
         &-vertical {
-            right: 24px;
+            .swiper-pagination-bullet {
+                right: 24px;
+                margin: 8px auto !important;
+            }
+        }
+
+        &-horizontal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .swiper-pagination-bullet {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
         }
     }
 }

@@ -15,12 +15,17 @@
     <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            direction: "vertical",
+            direction: getDirection(),
             autoHeight: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
 
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
             },
             mousewheel: {
                 virtual: true,
@@ -28,5 +33,10 @@
                 releaseOnEdges:true,
             },
         });
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
+            return direction;
+        }
     </script>
 </html>
