@@ -8,5 +8,7 @@
  */
 class WebAuthenticator
 {
-
+    public function webAuth(){
+        dd('df');
+    }
 }

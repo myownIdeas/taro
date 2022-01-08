@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Responses\Responses\WebResponse;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class LoginController extends Controller
@@ -21,12 +22,19 @@ class LoginController extends Controller
 
     public function login(Request $request){
 
-        $user = User::where('email',$request->get('email'))->where('password',md5($request->get('password')))->exists();
-        if($user){
+        dd(Auth::attempt(['email' => $request->get('email'), 'password' => md5($request->get('password'))]));
+        if (Auth::attempt(['email' => $request->get('email'), 'password' => md5($request->get('password'))])) {
+
             return \Redirect('admin/dashboard');
         }else{
-            return \Redirect('admin/login');
+            return \Redirect('login');
         }
+//        $user = User::where('email',$request->get('email'))->where('password',md5($request->get('password')))->exists();
+//        if($user){
+//
+//        }else{
+//            return \Redirect('admin/login');
+//        }
     }
 
     public function dashboard(Request $request){

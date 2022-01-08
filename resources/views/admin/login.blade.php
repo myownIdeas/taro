@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <form method="post" action="{{url('admin/login')}}">
+                <form method="post" action="{{url('login')}}">
                     @csrf
                     <div class="input-group form-group">
                         <div class="input-group-prepend">

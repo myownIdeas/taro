@@ -2,29 +2,30 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/login',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+        'uses'=>'LoginController@index', 'as' =>'login'
+    ]
+);
 
-Route::prefix('admin')->group(function(){
+Route::post('/login',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+        'uses'=>'LoginController@login', 'as' =>'login'
+    ]
+);
+
+Route::middleware(['AdminAuth'])->prefix('admin')->group(function(){
 
 
-    Route::get('/login',
-        [
-            'middleware'=>
-                [
-                   // 'webValidate:loginRequest'
-                ],
-            'uses'=>'LoginController@index', 'as' =>'login'
-        ]
-    );
 
-    Route::post('/login',
-        [
-            'middleware'=>
-                [
-                    // 'webValidate:loginRequest'
-                ],
-            'uses'=>'LoginController@login', 'as' =>'login'
-        ]
-    );
 
     Route::get('/dashboard',
         [
