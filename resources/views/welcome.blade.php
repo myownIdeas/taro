@@ -29,7 +29,7 @@
             },
             mousewheel: {
                 virtual: true,
-                sensitivity:1,
+                sensitivity:1000,
                 releaseOnEdges:true,
             },
         });

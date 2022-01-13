@@ -24,10 +24,7 @@ Route::post('/login',
 
 Route::middleware(['AdminAuth'])->prefix('admin')->group(function(){
 
-
-
-
-    Route::get('/dashboard',
+ Route::get('/dashboard',
         [
             'middleware'=>
                 [

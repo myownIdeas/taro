@@ -21,10 +21,7 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-
-        dd(Auth::attempt(['email' => $request->get('email'), 'password' => md5($request->get('password'))]));
-        if (Auth::attempt(['email' => $request->get('email'), 'password' => md5($request->get('password'))])) {
-
+        if (Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')])) {
             return \Redirect('admin/dashboard');
         }else{
             return \Redirect('login');

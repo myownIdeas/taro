@@ -202,6 +202,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
+                    <br />
                     <div className="swiper-pagination"></div>
                 </div>
             </section>
