@@ -148,8 +148,12 @@
 
         &-img {
             @extend .d-none,
-            .d-lg-block;
+            .d-lg-flex,
+            .align-items-center,
+            .justify-content-center;
             height: 100%;
+            max-width: 665px;
+            width: 100%;
 
             img {
                 max-height: 100%;
@@ -189,9 +193,23 @@
         }
 
         &-vertical {
-            .swiper-pagination-bullet {
-                right: 24px;
-                margin: 8px auto !important;
+            @include media-breakpoint-up(lg) {
+                .swiper-pagination-bullet {
+                    margin: 8px auto !important;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: inherit;
+                right: inherit;
+
+                .swiper-pagination-bullet {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                }
             }
         }
 
@@ -200,10 +218,53 @@
             align-items: center;
             justify-content: center;
 
-            .swiper-pagination-bullet {
-                margin-left: 4px;
-                margin-right: 4px;
+            @include media-breakpoint-up(lg) {
+                flex-direction: column;
+                width: auto;
+                left: inherit;
+                right: 10px;
+
+                .swiper-pagination-bullet {
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                }
             }
+
+            @include media-breakpoint-down(lg) {
+                .swiper-pagination-bullet {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        @extend .d-flex,
+        .align-items-center,
+        .justify-content-center,
+        .d-lg-none,
+        .btn,
+        .btn-primary;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+
+        &:after {
+            font-size: 1.5rem;
+        }
+    }
+
+    .swiper-button-next {
+        &:after {
+            margin-left: 0.25rem;
+        }
+    }
+
+    .swiper-button-prev {
+        &:after {
+            margin-right: 0.25rem;
         }
     }
 }
