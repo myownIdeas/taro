@@ -107,7 +107,7 @@ function Home() {
                                     <img src="frontend/images/hand.svg" alt="" />
                                 </div>
                                 <h6>Pay in 4</h6>
-                                <p>Our proprietary approval process has no impact your credit. Plus, the more you shop, the more your credit grows.</p>
+                                <p>Pay in 4 with your favorite retailers through our app, website, or in-store, with no interest or fees.</p>
                             </div>
                         </div>
                         <div className='col-md-4'>
@@ -116,7 +116,7 @@ function Home() {
                                     <img src="frontend/images/smartphone.svg" alt="" />
                                 </div>
                                 <h6>No impact your credit</h6>
-                                <p>Pay in 4 with your favorite retailers through our app, website, or in-store, with no interest or fees.</p>
+                                <p>Each time you shop with us, your credit limit wil grow. As you build your credit, you’ll be eligible for more lending products</p>
                             </div>
                         </div>
                     </div>
