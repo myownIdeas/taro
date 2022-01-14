@@ -44,8 +44,8 @@ function Footer() {
                         <div className="sf-img">
                             <picture>
                                 <source media="(min-width:992px)" srcSet="frontend/images/taro/app-footer.svg" />
-                                <source media="(min-width:576px)" srcSet="frontend/images/footer-img-tablet.svg" />
-                                <img src="frontend/images/footer-img-mobile.svg" alt="" />
+                                <source media="(min-width:576px)" srcSet="frontend/images/taro/app-footer.svg" />
+                                <img src="frontend/images/taro/app-footer.svg" alt="" />
                             </picture>
                         </div>
                         <div className='subscribe-widget'>
