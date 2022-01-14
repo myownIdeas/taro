@@ -98,7 +98,7 @@ function Home() {
                                     <img src="frontend/images/shopingBag.svg" alt="" />
                                 </div>
                                 <h6>Freedom</h6>
-                                <p>Enjoy the freedom of paying how you want, when you want. By using Taro, you're able to enjoy the things you want sooner.</p>
+                                <p>Enjoy the freedom of paying how you want, when you want. By using Taro, you’re able to enjoy the things you want sooner.</p>
                             </div>
                         </div>
                         <div className='col-md-4'>
@@ -107,7 +107,7 @@ function Home() {
                                     <img src="frontend/images/hand.svg" alt="" />
                                 </div>
                                 <h6>Pay in 4</h6>
-                                <p>Our proprietary approval process has no impact your credit. Plus, the more you shop, the more your credit grows.</p>
+                                <p>Split purchases into 4 equal payments with your favorite retailers through our app and website, or in-store, with no interest or fees.</p>
                             </div>
                         </div>
                         <div className='col-md-4'>
@@ -116,7 +116,7 @@ function Home() {
                                     <img src="frontend/images/smartphone.svg" alt="" />
                                 </div>
                                 <h6>No impact your credit</h6>
-                                <p>Pay in 4 with your favorite retailers through our app, website, or in-store, with no interest or fees.</p>
+                                <p>Each time you shop with us, your credit limit grows. As you build your credit, you’ll be elligable for more lending products</p>
                             </div>
                         </div>
                     </div>
@@ -203,9 +203,7 @@ function Home() {
                         </div>
                     </div>
                     <br />
-                    <div className="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
                 </div>
             </section>
 
