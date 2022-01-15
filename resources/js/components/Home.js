@@ -62,10 +62,10 @@ function Home() {
                     <div className='hs-content'>
                         <img src="frontend/images/counter.svg" alt="" />
                         <h1>Pay in Four</h1>
-                        <p>Split purchases into four equal payments over three months with <span className='highlighted'><span>Pakistan's first licensed</span></span> and Shariah compliant <span className='highlighted'><span>BNPL provider</span></span></p>
+                        <p>Split purchases into four equal payments over three months with <span className='highlighted'><span>Pakistan's first licensed</span></span> and Shariah friendly <span className='highlighted'><span>BNPL provider</span></span></p>
                         <div className='hhs-banner'>
                             <img src="frontend/images/home-hero-payments-thumb.png" alt="" className='payments-thumb' />
-                            <img src="frontend/images/home-hero-phone-thumb.png" alt="" className='phone-thumb' />
+                            <img src="frontend/images/iphone-header.png" alt="" className='phone-thumb' />
                             <img src="frontend/images/home-hero-orders-thumb.png" alt="" className='orders-thumb' />
                             <img src="frontend/images/home-hero-sec-circles.svg" alt="" className="home-hero-circles" />
                         </div>
@@ -92,7 +92,7 @@ function Home() {
             <section className='page-sec complaint-sec'>
                 <div className='container-fluid container-taro'>
                     <header className='page-sec-header'>
-                        <h2>Shariah compliant, flexible, and easy to use.</h2>
+                        <h2>Shariah friendly,</h2><br /><h2> flexible, and easy to use.</h2>
                         <p>We're changing the way you shop, and enabling you to pay on your own terms</p>
                     </header>
                     <div className='row'>

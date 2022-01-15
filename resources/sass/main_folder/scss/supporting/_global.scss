@@ -55,6 +55,7 @@ img {
             @include media-breakpoint-up(lg) {
                 font-size: 3.75rem;
                 max-width: 770px;
+                line-height: 2.8rem;
             }
 
             @include media-breakpoint-down(lg) {
@@ -63,10 +64,12 @@ img {
 
             @include media-breakpoint-only(md) {
                 font-size: 2.875rem;
+                line-height: 1.6rem;
             }
 
             @include media-breakpoint-down(md) {
                 font-size: 26px;
+                line-height: 0.5;
             }
         }
 
