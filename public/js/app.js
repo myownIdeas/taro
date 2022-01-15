@@ -67800,7 +67800,11 @@ function Footer() {
     e.preventDefault();
     axios.post(url + 'api/saveEmail', data).then(function (res) {
       clearState();
-      swal("Good job!", "You Email is Subscribed !", "success");
+      swal({
+        title: "Thank you!",
+        text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+        className: 'subscribed-modal'
+      });
     });
   }
 
@@ -67821,16 +67825,10 @@ function Footer() {
     className: "text-white"
   }, "BNPL provider")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sf-img"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    media: "(min-width:992px)",
-    srcSet: "frontend/images/taro/app-footer.svg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    media: "(min-width:576px)",
-    srcSet: "frontend/images/footer-img-tablet.svg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "frontend/images/footer-img-mobile.svg",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "frontend/images/taro/app-footer.svg",
     alt: ""
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subscribe-widget"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Subscribe to get early access"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: "",
@@ -68056,7 +68054,11 @@ function Home() {
 
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(url + 'api/saveEmail', data).then(function (res) {
       clearState();
-      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Thank you!", "Thanks for joining Taro, we 'll be back to you soon with our new exciting new features!");
+      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()({
+        title: "Thank you!",
+        text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+        className: 'subscribed-modal'
+      });
     }); //  }
   }
 
@@ -68218,7 +68220,10 @@ function Home() {
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
-    href: "/"
+    href: "#",
+    onClick: function onClick(e) {
+      return e.preventDefault();
+    }
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68239,7 +68244,10 @@ function Home() {
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Select the payment schedule that works for you, then confirm your loan. We\u2019ll never charge more than you see up front."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
-    href: "/"
+    href: "#",
+    onClick: function onClick(e) {
+      return e.preventDefault();
+    }
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68260,7 +68268,10 @@ function Home() {
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Download the Taro app or sign in at taro.pk. We\u2019ll send you email and text reminders so you never miss a payment."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
-    href: "/"
+    href: "#",
+    onClick: function onClick(e) {
+      return e.preventDefault();
+    }
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68269,9 +68280,9 @@ function Home() {
   })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "swiper-pagination"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "swiper-button-next"
+    className: "swiper-button-next"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "swiper-button-prev"
+    className: "swiper-button-prev"
   }))));
 }
 

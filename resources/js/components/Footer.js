@@ -29,7 +29,11 @@ function Footer() {
         e.preventDefault();
         axios.post(url + 'api/saveEmail', data).then(res => {
             clearState();
-            swal("Good job!", "You Email is Subscribed !", "success");
+            swal({
+                title: "Thank you!",
+                text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+                className: 'subscribed-modal'
+            });
         })
     }
 
@@ -42,11 +46,12 @@ function Footer() {
                         <h2><span className='d-none d-sm-inline-block'>Anywhere, Anytime:</span> Pay in Four</h2>
                         <p>Split purchases into four equal payments over three months with <span className='text-white'>Pakistan's first licensed</span> and Shariah compliant <span className='text-white'>BNPL provider</span></p>
                         <div className="sf-img">
-                            <picture>
+                            {/* <picture>
                                 <source media="(min-width:992px)" srcSet="frontend/images/taro/app-footer.svg" />
                                 <source media="(min-width:576px)" srcSet="frontend/images/footer-img-tablet.svg" />
                                 <img src="frontend/images/footer-img-mobile.svg" alt="" />
-                            </picture>
+                            </picture> */}
+                            <img src="frontend/images/taro/app-footer.svg" alt="" />
                         </div>
                         <div className='subscribe-widget'>
                             <h6>Subscribe to get early access</h6>
@@ -70,7 +75,23 @@ function Footer() {
                     </div>
                     <img src="frontend/images/footer-circles.svg" alt="" className='circles-shape' />
                 </div>
+
+                {/* <div className="swal-overlay swal-overlay--show-modal subscribed-modal" tabIndex="-1">
+  <div className="swal-modal" role="dialog" aria-modal="true"><div className="swal-title">Thank you!</div><div className="swal-text">Thanks for joining Taro, we 'll be back to you soon with our new exciting new features!</div><div className="swal-footer"><div className="swal-button-container">
+
+    <button className="swal-button swal-button--confirm">OK</button>
+
+    <div className="swal-button__loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+                </div></div></div></div> */}
             </footer>
+
+            
+            
         </>
     )
 }

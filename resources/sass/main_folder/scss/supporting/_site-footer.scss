@@ -121,11 +121,24 @@
             } */
 
             @include media-breakpoint-between(sm, lg) {
-                margin-top: -3rem;
+
+                /* margin-top: -3rem; */
+                img {
+                    max-width: 320px;
+                    max-height: 410px;
+                }
             }
 
             @include media-breakpoint-down(lg) {
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            @include media-breakpoint-down(sm) {
+                img {
+                    max-width: 230px;
+                    max-height: 290px;
+                }
             }
         }
     }
