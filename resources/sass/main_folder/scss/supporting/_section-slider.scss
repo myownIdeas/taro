@@ -245,11 +245,18 @@
         .align-items-center,
         .justify-content-center,
         .d-lg-none,
-        .btn,
-        .btn-primary;
+        /* .btn,
+        .btn-primary */
+        ;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
+
+        &:focus,
+        &:focus:active,
+        &:active {
+            outline: none;
+        }
 
         &:after {
             font-size: 1.5rem;

@@ -44,7 +44,11 @@ function Home() {
         // if(Object.keys(formErrors).length ===0 ){
         axios.post(url + 'api/saveEmail', data).then(res => {
             clearState();
-            swal("Thank you!", "Thanks for joining Taro, we 'll be back to you soon with our new exciting new features!");
+            swal({
+                title: "Thank you!",
+                text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+                className: 'subscribed-modal'
+            });
         })
         //  }
 
@@ -157,7 +161,7 @@ function Home() {
                                             <img src="frontend/images/taro/app-step1.svg" alt="" />
                                         </div>
                                         <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
-                                        <a className="btn btn-primary" href="/">Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
                                         <img src="frontend/images/taro/app-step1.svg" alt="" />
@@ -175,7 +179,7 @@ function Home() {
                                             <img src="frontend/images/taro/app-step2.svg" alt="" />
                                         </div>
                                         <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
-                                        <a className="btn btn-primary" href="/">Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
                                         <img src="frontend/images/taro/app-step2.svg" alt="" />
@@ -193,7 +197,7 @@ function Home() {
                                             <img src="frontend/images/taro/app-step3.svg" alt="" />
                                         </div>
                                         <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
-                                        <a className="btn btn-primary" href="/">Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
                                         <img src="frontend/images/taro/app-step3.svg" alt="" />
@@ -202,7 +206,10 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <br />
+
+                    <div className="swiper-pagination"></div>
+                    <div className="swiper-button-next"></div>
+                    <div className="swiper-button-prev"></div>
 
                 </div>
             </section>

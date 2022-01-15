@@ -192,3 +192,94 @@ img {
         }
     }
 }
+
+.swal-overlay {
+    background: transparent;
+
+    &:after {
+        @extend .position-absolute,
+        .d-block,
+        .w-100,
+        .h-100;
+        top: 0;
+        left: 0;
+        content: '';
+        background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 52.79%, #7417EB 100%);
+        opacity: 0.9;
+        z-index: 1;
+    }
+
+    .swal-modal {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.subscribed-modal {
+    &.swal-modal {
+        width: calc(100% - 40px);
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url('../images/subscribed-modal-circles.svg');
+        background-repeat: no-repeat;
+
+        .swal-title {
+            color: #221836;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .swal-text {
+            color: #736392;
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 970px;
+            max-height: 560px;
+
+            .swal-title {
+                font-size: 64px;
+            }
+        }
+
+        @include media-breakpoint-between(sm, lg) {
+            max-height: 460px;
+            max-width: 725px;
+
+            .swal-title {
+                font-size: 48px;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            background-position: center bottom;
+            background-size: cover;
+            height: 55vw;
+
+            .swal-text {
+                font-size: 20px;
+                max-width: 470px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            background-position: center;
+            background-size: 100%;
+            max-height: 400px;
+            height: 100vh;
+
+            .swal-title {
+                font-size: 32px;
+            }
+
+            .swal-text {
+                font-size: 15px;
+                max-width: 280px;
+            }
+        }
+    }
+}
