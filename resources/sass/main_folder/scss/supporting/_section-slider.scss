@@ -1,11 +1,11 @@
 .steps-slider-sec {
+    min-height: 100vh;
     @include media-breakpoint-down(lg) {
         margin-bottom: 2rem;
     }
 
-    .swiper-slide {
-        @extend .d-flex,
-        .align-items-center;
+    .swiper__slide {
+        @extend .d-flex, .align-items-center;
 
         @include media-breakpoint-up(lg) {
             max-height: 100vh;
@@ -22,13 +22,16 @@
 
     .ss-slide {
         @extend .w-100;
-        background: linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #F6F3FF 52.08%, rgba(246, 243, 255, 0) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(246, 243, 255, 0) 0%,
+            #f6f3ff 52.08%,
+            rgba(246, 243, 255, 0) 100%
+        );
         height: 100%;
 
-        &>.container-fluid {
-            @extend .d-flex,
-            .align-items-center,
-            .justify-content-between;
+        & > .container-fluid {
+            @extend .d-flex, .align-items-center, .justify-content-between;
             height: 100%;
 
             @include media-breakpoint-up(xxl) {
@@ -52,7 +55,6 @@
         }
 
         &-content {
-
             @include media-breakpoint-up(lg) {
                 max-width: 400px;
             }
@@ -65,8 +67,7 @@
             }
 
             &-img {
-                @extend .d-block,
-                .d-lg-none;
+                @extend .d-block, .d-lg-none;
 
                 @include media-breakpoint-down(lg) {
                     margin-top: 2rem;
@@ -81,16 +82,15 @@
             }
 
             h6 {
-                @extend .font-weight-600,
-                .text-uppercase;
-                color: #5F18EB;
+                @extend .font-weight-600, .text-uppercase;
+                color: #5f18eb;
                 font-size: 14px;
             }
 
             h3 {
                 @extend .font-weight-500;
                 color: #221836;
-                margin: .5rem 0 1.125rem 0;
+                margin: 0.5rem 0 1.125rem 0;
 
                 @include media-breakpoint-up(lg) {
                     font-size: 3.75rem;
@@ -123,8 +123,8 @@
 
             .btn {
                 @extend .d-inline-flex,
-                .align-items-center,
-                .justify-content-center;
+                    .align-items-center,
+                    .justify-content-center;
 
                 @include media-breakpoint-up(lg) {
                     width: 7.875rem;
@@ -148,9 +148,9 @@
 
         &-img {
             @extend .d-none,
-            .d-lg-flex,
-            .align-items-center,
-            .justify-content-center;
+                .d-lg-flex,
+                .align-items-center,
+                .justify-content-center;
             height: 100%;
             max-width: 665px;
             width: 100%;
@@ -164,8 +164,6 @@
                 margin-right: auto;
             }
         }
-
-
     }
 
     .swiper-wrapper {
@@ -184,10 +182,12 @@
             &.swiper-pagination-bullet-active {
                 width: 10px;
                 height: 10px;
-                background: linear-gradient(81.12deg,
-                        #5e17eb 0%,
-                        #551df7 52.79%,
-                        #7417eb 100%);
+                background: linear-gradient(
+                    81.12deg,
+                    #5e17eb 0%,
+                    #551df7 52.79%,
+                    #7417eb 100%
+                );
                 box-shadow: 0px 1px 1px rgba(94, 23, 235, 0.2);
             }
         }
@@ -246,8 +246,7 @@
         .justify-content-center,
         .d-lg-none,
         /* .btn,
-        .btn-primary */
-        ;
+        .btn-primary */;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
