@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function AppFooterSVG() {
+function FootSVG1() {
     return (
         <>
         <svg width="554" height="688" viewBox="0 0 554 688" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -738,4 +738,4 @@ function AppFooterSVG() {
     )
 }
 
-export default AppFooterSVG;
+export default FootSVG1;

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, HashRouter, Link, Route } from "react-
 import axios from "axios";
 import swal from 'sweetalert';
 
+
 function Home() {
 
     const initialState = { email: "" };
@@ -158,13 +159,13 @@ function Home() {
                                         <h6>Step 1</h6>
                                         <h3>Fill your cart</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step1.png" alt="" />
+                                            <img src="frontend/images/taro/app-step1.svg" alt="" />
                                         </div>
                                         <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
                                         <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step1.png" alt="" />
+                                        <img src="frontend/images/taro/app-step1.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -176,13 +177,13 @@ function Home() {
                                         <h6>Step 2</h6>
                                         <h3>Choose how you pay</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step2.png" alt="" />
+                                            <img src="frontend/images/taro/app-step2.svg" alt="" />
                                         </div>
                                         <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
                                         <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step2.png" alt="" />
+                                        <img src="frontend/images/taro/app-step2.svg" alt="" />
                                     </div>
                                 </div>
                             </div>

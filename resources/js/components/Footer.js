@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import FooterSvg from "./svg/AppFooterSVG.js";
+import FooterSvg from "./svg/FootSVG1.js";
 
 function Footer() {
     const initialState = { email: "" };
