@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, HashRouter, Link, Route } from "react-
 import axios from "axios";
 import swal from 'sweetalert';
 
+
 function Home() {
 
     const initialState = { email: "" };
