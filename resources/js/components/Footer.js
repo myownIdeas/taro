@@ -51,7 +51,7 @@ function Footer() {
                                 <source media="(min-width:576px)" srcSet="frontend/images/footer-img-tablet.svg" />
                                 <img src="frontend/images/footer-img-mobile.svg" alt="" />
                             </picture> */}
-                            <img src="frontend/images/taro/app-footer-2.svg" alt="" />
+                            <img src="frontend/images/taro/app-footer4x.png" alt="" />
                         </div>
                         <div className='subscribe-widget'>
                             <h6>Subscribe to get early access</h6>
