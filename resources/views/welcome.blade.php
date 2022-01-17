@@ -32,6 +32,7 @@
     </body>
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             direction: getDirection(),
@@ -61,5 +62,18 @@
             var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
             return direction;
         }
+
+        // Scrollmagic
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        $(function () { // wait for document ready
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: ".steps-slider-sec"})
+                    .setPin(".steps-slider-sec")
+                    .addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+                    .addTo(controller);
+        });
     </script>
 </html>
