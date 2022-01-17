@@ -66,7 +66,7 @@ function Home() {
                         <p>Split purchases into four equal payments over three months with <span className='highlighted'><span>Pakistan's first licensed</span></span> and Shariah friendly <span className='highlighted'><span>BNPL provider</span></span></p>
                         <div className='hhs-banner'>
                             <img src="frontend/images/home-hero-payments-thumb.png" alt="" className='payments-thumb' />
-                            <img src="frontend/images/iphone-header.png" alt="" className='phone-thumb' />
+                            <img src="frontend/images/taro/iphone.png" alt="" className='phone-thumb' />
                             <img src="frontend/images/home-hero-orders-thumb.png" alt="" className='orders-thumb' />
                             <img src="frontend/images/home-hero-sec-circles.svg" alt="" className="home-hero-circles" />
                         </div>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b410fda1-cd10-44f1-8e89-961be924427d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/Footer.js" afterPath="$PROJECT_DIR$/resources/js/components/Footer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/Home.js" afterPath="$PROJECT_DIR$/resources/js/components/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/svg/Step1SVG.js" afterPath="$PROJECT_DIR$/resources/js/components/svg/Step1SVG.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/images/taro/app-step3.svg" afterPath="$PROJECT_DIR$/public/frontend/images/taro/app-step3.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -33,10 +30,10 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8499414">
-              <caret line="206" column="34" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.67409146">
+              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding>
-                <element signature="e#12242#16226#0" expanded="false" />
+                <element signature="e#12240#16224#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -777,10 +774,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8499414">
-          <caret line="206" column="34" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.67409146">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
-            <element signature="e#12242#16226#0" expanded="false" />
+            <element signature="e#12240#16224#0" expanded="false" />
           </folding>
         </state>
       </provider>
