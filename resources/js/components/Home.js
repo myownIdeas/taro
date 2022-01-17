@@ -201,7 +201,7 @@ function Home() {
                                         <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step3.svg" alt="" />
+                                        <img src="frontend/images/taro/app-step33.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
