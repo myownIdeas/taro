@@ -12984,6 +12984,10 @@ img {
   box-shadow: none;
 }
 
+.swal-modal {
+  border-radius: 30px !important;
+}
+
 .site-header {
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
