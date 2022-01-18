@@ -188,13 +188,13 @@ function Home() {
                                         <h6>Step 2</h6>
                                         <h3>Choose how you pay</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step2.svg" alt="" />
+                                            <img src="frontend/images/taro/price_img.png" alt="" />
                                         </div>
                                         <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
                                         <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step2.svg" alt="" />
+                                        <img src="frontend/images/taro/price_img.png" alt="" />
                                     </div>
                                 </div>
                             </div>
