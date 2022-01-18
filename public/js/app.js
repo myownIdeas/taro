@@ -67937,7 +67937,8 @@ var Header = /*#__PURE__*/function (_Component) {
         to: "#",
         className: "brandName"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "frontend/images/logo.svg",
+        width: "143px",
+        src: "frontend/images/taro_logo.png",
         alt: ""
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "#",
@@ -68059,10 +68060,22 @@ function Home() {
         text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
         className: 'subscribed-modal'
       });
+      $('#subscribeModal').modal('hide');
     }); //  }
   }
 
   ;
+
+  function showSubscribe(e) {
+    e.preventDefault();
+    $('#subscribeModal').modal('show');
+  }
+
+  function dismissModal(e) {
+    e.preventDefault();
+    $('#subscribeModal').modal('hide');
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "hero-sec home-hero-sec"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -68221,9 +68234,7 @@ function Home() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
     href: "#",
-    onClick: function onClick(e) {
-      return e.preventDefault();
-    }
+    onClick: showSubscribe
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68245,9 +68256,7 @@ function Home() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Select the payment schedule that works for you, then confirm your loan. We\u2019ll never charge more than you see up front."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
     href: "#",
-    onClick: function onClick(e) {
-      return e.preventDefault();
-    }
+    onClick: showSubscribe
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68269,9 +68278,7 @@ function Home() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Download the Taro app or sign in at taro.pk. We\u2019ll send you email and text reminders so you never miss a payment."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
     href: "#",
-    onClick: function onClick(e) {
-      return e.preventDefault();
-    }
+    onClick: showSubscribe
   }, "Subscribe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ss-slide-img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -68283,7 +68290,52 @@ function Home() {
     className: "swiper-button-next"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "swiper-button-prev"
-  }))));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal",
+    id: "subscribeModal",
+    tabindex: "-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog modal-dialog-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    onClick: dismissModal,
+    className: "btn-close",
+    "data-bs-dismiss": "modal",
+    "aria-label": "Close"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subscribe-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Subscribe to get early access"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "",
+    onSubmit: function onSubmit(e) {
+      submitForm(e);
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subscribe-widget-form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group input-field-wrap"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "frontend/images/envelope.svg",
+    alt: "",
+    className: "icon-envelope"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    required: true,
+    onChange: changeHandler,
+    name: "email",
+    value: data.email,
+    autoComplete: "off",
+    className: "form-control",
+    placeholder: "Your email address"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    className: "btn btn-primary"
+  }, "Subscribe")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No spam, notifications only about new products and updates. You can always unsubscribe.")))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
