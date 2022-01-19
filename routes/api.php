@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/merchant-plugin',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+        'uses'=>'MerchentController@create', 'as' =>'saveEmail'
+    ]
+);
+
 
 Route::post('/saveEmail',
     [
