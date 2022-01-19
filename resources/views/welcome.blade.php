@@ -36,6 +36,7 @@
         var swiper = new Swiper(".mySwiper", {
             direction: getDirection(),
             autoHeight: true,
+            speed: 500,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -60,6 +61,24 @@
             var windowWidth = window.innerWidth;
             var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
             return direction;
+        }
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("sliderWrap");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop - 80;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            //swiper.mousewheel.enable();
+          } else {
+            //swiper.mousewheel.disable();
+          }
         }
     </script>
 </html>

@@ -160,7 +160,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className='steps-slider-sec'>
+            <section className='steps-slider-sec' id="sliderWrap">
                 <div className="swiper mySwiper">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
