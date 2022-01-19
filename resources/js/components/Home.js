@@ -161,68 +161,65 @@ function Home() {
             </section>
 
             <section className='steps-slider-sec'>
-                <div className="swiper mySwiper">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                            <div className="ss-slide">
-                                <div className='container-fluid container-taro'>
-                                    <div className='ss-slide-content'>
-                                        <h6>Step 1</h6>
-                                        <h3>Fill your cart</h3>
-                                        <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step1.svg" alt="" />
-                                        </div>
-                                        <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
-                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
-                                    </div>
-                                    <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step1.svg" alt="" />
-                                    </div>
-                                </div>
+                <div className='container py-4'>
+                    <div className="row swipe-section">
+                        <div className="col-md-7">
+                            <div className='ss-slide-img'>
+                                <img src="frontend/images/taro/app-step1.svg" alt="" />
                             </div>
                         </div>
-                        <div className="swiper-slide">
-                            <div className="ss-slide">
-                                <div className='container-fluid container-taro'>
-                                    <div className='ss-slide-content'>
-                                        <h6>Step 2</h6>
-                                        <h3>Choose how you pay</h3>
-                                        <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step2.svg" alt="" />
-                                        </div>
-                                        <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
-                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
-                                    </div>
-                                    <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step2.svg" alt="" />
-                                    </div>
+                        <div className="col-md-5">
+                            <div className='ss-slide-content'>
+                                <h6>Step 1</h6>
+                                <h3>Fill your cart</h3>
+                                <div className='ss-slide-content-img'>
+                                    <img src="frontend/images/taro/app-step1.svg" alt="" />
                                 </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="ss-slide">
-                                <div className='container-fluid container-taro'>
-                                    <div className='ss-slide-content'>
-                                        <h6>Step 3</h6>
-                                        <h3>Make easy monthly payments</h3>
-                                        <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step3.svg" alt="" />
-                                        </div>
-                                        <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
-                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
-                                    </div>
-                                    <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step33.svg" alt="" />
-                                    </div>
-                                </div>
+                                <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
+                                <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
                             </div>
                         </div>
                     </div>
-
-                    <div className="swiper-pagination"></div>
-                    <div className="swiper-button-next"></div>
-                    <div className="swiper-button-prev"></div>
-
+                </div>
+                <div className='container py-4'>
+                    <div className="row swipe-section">
+                        <div className="col-md-5">
+                            <div className='ss-slide-content'>
+                                <h6>Step 2</h6>
+                                <h3>Choose how you pay</h3>
+                                <div className='ss-slide-content-img'>
+                                    <img src="frontend/images/taro/app-step2.svg" alt="" />
+                                </div>
+                                <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
+                                <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
+                            </div>
+                        </div>
+                        <div className="col-md-7">
+                            <div className='ss-slide-img'>
+                                <img src="frontend/images/taro/app-step2.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='container py-4'>
+                    <div className="row swipe-section">
+                        <div className="col-md-7">
+                            <div className='ss-slide-img'>
+                                <img src="frontend/images/taro/app-step33.svg" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-md-5">
+                            <div className='ss-slide-content'>
+                                <h6>Step 3</h6>
+                                <h3>Make easy monthly payments</h3>
+                                <div className='ss-slide-content-img'>
+                                    <img src="frontend/images/taro/app-step3.svg" alt="" />
+                                </div>
+                                <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
+                                <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         <div className="modal" id="subscribeModal" tabindex="-1">
