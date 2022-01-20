@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Taro</title>
@@ -43,20 +43,22 @@
 		var scene = new ScrollMagic.Scene(
             {
                 triggerElement: "#triggerfix",
-                duration: 800,
+                duration: 300,
                 triggerHook: 0,
             }
         )
+            .on('enter',function (){
+                enterSlider();
+            }).on('end',function (){
+                endSlider();
+            })
 		.setPin(".steps-slider-sec")
 		.addTo(controller)
-        
-	});
-    </script>
-    <script>
-    //$(function(){
-      //  var pinned = document.getElementsByClassName("scrollmagic-pin-spacer");
-    //})
 
+	});
+
+
+    function enterSlider(){
         var swiper = new Swiper(".mySwiper", {
             direction: getDirection(),
             autoHeight: true,
@@ -88,5 +90,13 @@
             var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
             return direction;
         }
+    }
+
+    function endSlider(){
+
+    }
+
+
     </script>
+
 </html>
