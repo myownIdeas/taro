@@ -2,6 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+Route::get('/mobile-verification',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+        'uses'=>'MerchentController@mobileScreen', 'as' =>'mobile-verification'
+    ]
+);
+
 Route::get('/login',
     [
         'middleware'=>

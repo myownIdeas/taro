@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410fda1-cd10-44f1-8e89-961be924427d" name="Default" comment="" />
+    <list default="true" id="b410fda1-cd10-44f1-8e89-961be924427d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Web/MerchentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/MobileVerification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/merchent/merchant.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/merchent/mobile_verification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/MerchentRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/MerchentRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/svg/FootSVG1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/svg/Step1SVG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/svg/Step2SVG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +365,7 @@
     <property name="FullScreen" value="false" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -363,11 +377,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/components" />
+      <recent name="$PROJECT_DIR$/resources/views/merchant" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Web" />
       <recent name="$PROJECT_DIR$/app/Repository" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="C:\xampp\htdocs\taro\resources\js\components\svg" />
-      <recent name="C:\xampp\htdocs\taro.com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\taro.com\resources\js" />

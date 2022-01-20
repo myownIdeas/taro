@@ -7,6 +7,7 @@ import Home from "./Home.js";
 import About from "./About.js";
 import HeaderWrap from "./Header.js";
 import FooterWrap from "./Footer.js";
+import MobileVerification from "./MobileVerification";
 export default class Main extends Component {
 
     render() {
@@ -17,7 +18,7 @@ export default class Main extends Component {
                     <div className='wrapper'>
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
-                            <Route exit path="/about" element={<About />}></Route>
+                            {/*<Route exit path="/merchant-plugin" element={<MobileVerification />}></Route>*/}
                         </Routes>
                         <FooterWrap />
                     </div>
