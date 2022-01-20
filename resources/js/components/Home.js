@@ -158,9 +158,9 @@ function Home() {
                         <img src="frontend/images/circles-shape.svg" alt="" className='circles-shape' />
                     </div>
                 </div>
+                <div id="triggerfix"></div>
             </section>
-
-            <section className='steps-slider-sec' id="sliderWrap">
+            <section className='steps-slider-sec'>
                 <div className="swiper mySwiper">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">

@@ -32,10 +32,35 @@
     </body>
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script>
+	    // init controller
+	    var controller = new ScrollMagic.Controller();
+    </script>
+    <script>
+	$(function () { // wait for document ready
+		// build scene
+		var scene = new ScrollMagic.Scene(
+            {
+                triggerElement: "#triggerfix",
+                duration: 800,
+                triggerHook: 0,
+            }
+        )
+		.setPin(".steps-slider-sec")
+		.addTo(controller)
+        
+	});
+    </script>
+    <script>
+    //$(function(){
+      //  var pinned = document.getElementsByClassName("scrollmagic-pin-spacer");
+    //})
+
         var swiper = new Swiper(".mySwiper", {
             direction: getDirection(),
             autoHeight: true,
+            edgeSwipeThreshold: 0,
             speed: 500,
             pagination: {
                 el: ".swiper-pagination",
@@ -49,8 +74,9 @@
             },
             mousewheel: {
                 virtual: true,
-                sensitivity:1000,
+                sensitivity:1,
                 releaseOnEdges:true,
+                forceToAxis: true,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -61,24 +87,6 @@
             var windowWidth = window.innerWidth;
             var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
             return direction;
-        }
-
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the header
-        var header = document.getElementById("sliderWrap");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop - 80;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            //swiper.mousewheel.enable();
-          } else {
-            //swiper.mousewheel.disable();
-          }
         }
     </script>
 </html>

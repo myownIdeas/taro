@@ -12996,6 +12996,14 @@ img {
   height: 100%;
 }
 
+#triggerfix {
+  position: absolute;
+  bottom: 80px;
+  height: 10px;
+  width: 10px;
+  background: red;
+}
+
 .site-header {
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
