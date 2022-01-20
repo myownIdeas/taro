@@ -52,7 +52,7 @@ function Footer() {
                                 <img src="frontend/images/footer-img-mobile.svg" alt="" />
                             </picture> */}
 
-                            <img src="frontend/images/taro/app-footer4x.png" alt="" />
+                            <img src="frontend/images/taro/footer_lates.png" alt="" />
                         </div>
                         <div className='subscribe-widget'>
                             <h6>Subscribe to get early access</h6>

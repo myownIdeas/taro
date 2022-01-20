@@ -286,3 +286,26 @@ img {
         }
     }
 }
+
+#subscribeModal .subscribe-widget p{
+  color: #897E9E;
+}
+.modal-backdrop{
+  opacity: 0.9 !important;
+  background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 52.79%, #7417EB 100%);
+}
+#subscribeModal .modal-content{
+  border-radius: 30px !important;
+  padding: 1rem;
+}
+#subscribeModal .btn-close{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 22;
+  outline: none;
+  box-shadow: none;
+}
+.swal-modal{
+  border-radius: 30px !important;
+}

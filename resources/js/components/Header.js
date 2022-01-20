@@ -9,7 +9,7 @@ class Header extends Component{
             <header className='site-header'>
                 <div className="container-fluid container-taro">
                     <div className="site-logo">
-                        <Link to="#" className='brandName'><img src="frontend/images/logo.svg" alt="" /></Link>
+                        <Link to="#" className='brandName'><img width="143px" src="frontend/images/taro_logo.png" alt="" /></Link>
                     </div>
                     <Link to="#" className='btn btn-primary'>Get Early Access</Link>
                 </div>
