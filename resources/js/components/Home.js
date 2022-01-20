@@ -50,14 +50,25 @@ function Home() {
                 text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
                 className: 'subscribed-modal'
             });
-        })
+            $('#subscribeModal').modal('hide');
+        });
         //  }
 
     };
 
+    function showSubscribe(e) {
+        e.preventDefault();
+        $('#subscribeModal').modal('show');
+    }
+    function dismissModal(e) {
+        e.preventDefault();
+        $('#subscribeModal').modal('hide');
+    }
+
 
     return (
         <>
+
             <section className='hero-sec home-hero-sec'>
                 <div className='container-fluid container-taro'>
                     <div className='hs-content'>
@@ -74,9 +85,9 @@ function Home() {
                             <h6>Subscribe to get early access</h6>
                             <form action="" onSubmit={(e) => { submitForm(e) }}>
                                 <div className='subscribe-widget-form'>
-                                    <div className='form-group input-field-wrap'>
+                                    <div className='form-group input-field-wrap' >
                                         <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
-                                        <input type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                        <input  type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
                                     </div>
                                     <div className='form-group'>
                                         <button type="submit" className='btn btn-primary'>Subscribe</button>
@@ -147,9 +158,10 @@ function Home() {
                         <img src="frontend/images/circles-shape.svg" alt="" className='circles-shape' />
                     </div>
                 </div>
+                <div id="triggerfix"></div>
             </section>
-
             <section className='steps-slider-sec'>
+                <div id="slideoverlay"></div>
                 <div className="swiper mySwiper">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
@@ -159,13 +171,13 @@ function Home() {
                                         <h6>Step 1</h6>
                                         <h3>Fill your cart</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step1.svg" alt="" />
+                                            <img src="frontend/images/taro/1.png" alt="" />
                                         </div>
                                         <p>Shop your favorite stores and then select Taro at checkout. Enter a few pieces of information for a real-time decision.</p>
-                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step1.svg" alt="" />
+                                        <img src="frontend/images/taro/1.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -177,13 +189,13 @@ function Home() {
                                         <h6>Step 2</h6>
                                         <h3>Choose how you pay</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step2.svg" alt="" />
+                                            <img src="frontend/images/taro/2.png" alt="" />
                                         </div>
                                         <p>Select the payment schedule that works for you, then confirm your loan. We’ll never charge more than you see up front.</p>
-                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step2.svg" alt="" />
+                                        <img src="frontend/images/taro/2.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -195,13 +207,13 @@ function Home() {
                                         <h6>Step 3</h6>
                                         <h3>Make easy monthly payments</h3>
                                         <div className='ss-slide-content-img'>
-                                            <img src="frontend/images/taro/app-step3.svg" alt="" />
+                                            <img src="frontend/images/taro/3.png" alt="" />
                                         </div>
                                         <p>Download the Taro app or sign in at taro.pk. We’ll send you email and text reminders so you never miss a payment.</p>
-                                        <a className="btn btn-primary" href="#" onClick={e => e.preventDefault()}>Subscribe</a>
+                                        <a className="btn btn-primary" href="#" onClick={showSubscribe}>Subscribe</a>
                                     </div>
                                     <div className='ss-slide-img'>
-                                        <img src="frontend/images/taro/app-step33.svg" alt="" />
+                                        <img src="frontend/images/taro/3.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -214,6 +226,30 @@ function Home() {
 
                 </div>
             </section>
+        <div className="modal" id="subscribeModal" tabindex="-1">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                    <button type="button" onClick={dismissModal} className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div className="modal-body">
+                        <div className='subscribe-widget'>
+                            <h6>Subscribe to get early access</h6>
+                            <form action="" onSubmit={(e) => { submitForm(e) }}>
+                                <div className='subscribe-widget-form'>
+                                    <div className='form-group input-field-wrap' >
+                                        <img src="frontend/images/envelope.svg" alt="" className='icon-envelope' />
+                                        <input  type="email" required onChange={changeHandler} name="email" value={data.email} autoComplete="off" className='form-control' placeholder='Your email address' />
+                                    </div>
+                                    <div className='form-group'>
+                                        <button type="submit" className='btn btn-primary'>Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 
             {/* <section className='steps-slider-sec d-block d-lg-none'>
                 <div className="swiper mySwiperMobile">

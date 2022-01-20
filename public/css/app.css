@@ -12961,6 +12961,57 @@ img {
   }
 }
 
+#subscribeModal .subscribe-widget p {
+  color: #897E9E;
+}
+
+.modal-backdrop {
+  opacity: 0.9 !important;
+  background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 52.79%, #7417EB 100%);
+}
+
+#subscribeModal .modal-content {
+  border-radius: 30px !important;
+  padding: 1rem;
+}
+
+#subscribeModal .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 22;
+  outline: none;
+  box-shadow: none;
+}
+
+.swal-modal {
+  border-radius: 30px !important;
+}
+
+#sliderWrap {
+  height: 100vh;
+}
+
+#sliderWrap .mySwiper {
+  height: 100%;
+}
+
+#triggerfix {
+  position: absolute;
+  bottom: 80px;
+  height: 1px;
+}
+
+#slideoverlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 222;
+}
+
 .site-header {
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
