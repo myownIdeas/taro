@@ -43,13 +43,13 @@
 		var scene = new ScrollMagic.Scene(
             {
                 triggerElement: "#triggerfix",
-                duration: 300,
+                duration: 500,
                 triggerHook: 0,
             }
         )
             .on('enter',function (){
                 enterSlider();
-            }).on('end',function (){
+            }).on('leave',function (){
                 endSlider();
             })
 		.setPin(".steps-slider-sec")
@@ -59,11 +59,14 @@
 
 
     function enterSlider(){
+        var slideOverlay = document.getElementById("slideoverlay");
+        slideOverlay.style.display = "none";
+    }
         var swiper = new Swiper(".mySwiper", {
             direction: getDirection(),
             autoHeight: true,
             edgeSwipeThreshold: 0,
-            speed: 500,
+            preventInteractionOnTransition: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -76,7 +79,7 @@
             },
             mousewheel: {
                 virtual: true,
-                sensitivity:1,
+                sensitivity: 1,
                 releaseOnEdges:true,
                 forceToAxis: true,
             },
@@ -90,10 +93,10 @@
             var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
             return direction;
         }
-    }
 
     function endSlider(){
-
+        var slideOverlay = document.getElementById("slideoverlay");
+        slideOverlay.style.display = "block";
     }
 
 

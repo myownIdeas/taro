@@ -161,6 +161,7 @@ function Home() {
                 <div id="triggerfix"></div>
             </section>
             <section className='steps-slider-sec'>
+                <div id="slideoverlay"></div>
                 <div className="swiper mySwiper">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
@@ -248,7 +249,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
 
             {/* <section className='steps-slider-sec d-block d-lg-none'>
                 <div className="swiper mySwiperMobile">
