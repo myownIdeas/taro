@@ -309,3 +309,24 @@ img {
 .swal-modal{
   border-radius: 30px !important;
 }
+
+#sliderWrap {
+    height: 100vh;
+    .mySwiper{
+        height: 100%;
+    }
+}
+#triggerfix {
+    position: absolute;
+    bottom: 80px;
+    height: 1px;
+}
+#slideoverlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 222;
+}
