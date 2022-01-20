@@ -20,7 +20,7 @@ Route::post('/merchant-plugin',
             [
                 // 'webValidate:loginRequest'
             ],
-        'uses'=>'MerchentController@create', 'as' =>'saveEmail'
+        'uses'=>'MerchentController@create', 'as' =>'merchant-plugin'
     ]
 );
 

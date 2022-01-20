@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b410fda1-cd10-44f1-8e89-961be924427d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MerchentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/MerchentRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/EmailSubscriberRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/EmailSubscriberRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -353,7 +358,7 @@
     <property name="FullScreen" value="false" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repository" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -365,6 +370,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repository" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\xampp\htdocs\taro\resources\js\components\svg" />
       <recent name="C:\xampp\htdocs\taro.com" />
@@ -409,7 +416,8 @@
       <workItem from="1642509839577" duration="1222000" />
       <workItem from="1642570709695" duration="7891000" />
       <workItem from="1642594658318" duration="1610000" />
-      <workItem from="1642608206134" duration="671000" />
+      <workItem from="1642608206134" duration="881000" />
+      <workItem from="1642654682846" duration="6066000" />
     </task>
     <servers />
   </component>
@@ -459,6 +467,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
