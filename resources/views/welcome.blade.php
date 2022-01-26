@@ -34,7 +34,7 @@
     <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script>
-	    // init controller
+	    // init controller1
 	    var controller = new ScrollMagic.Controller();
     </script>
     <script>

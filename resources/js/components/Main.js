@@ -10,18 +10,24 @@ import FooterWrap from "./Footer.js";
 import MobileVerification from "./MobileVerification";
 export default class Main extends Component {
 
+    constructor(state) {
+        super(state);
+    }
     render() {
         return (
             <React.Fragment>
                 <Router>
-                    <HeaderWrap />
+                    {(location.pathname === '/render-page-for-customer-verification'?'':<HeaderWrap />)}
+
                     <div className='wrapper'>
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
-                            {/*<Route exit path="/merchant-plugin" element={<MobileVerification />}></Route>*/}
+                            <Route exit path="/render-page-for-customer-verification" element={<MobileVerification />}></Route>
                         </Routes>
-                        <FooterWrap />
+
                     </div>
+                    {(location.pathname === '/render-page-for-customer-verification'?'':<FooterWrap />)}
+
                 </Router>
             </React.Fragment>
 

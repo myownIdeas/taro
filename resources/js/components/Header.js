@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Routes,HashRouter,Link, Route} from "react-router-dom";
+import {BrowserRouter as Router,Routes,HashRouter,useLocation,Link, Route} from "react-router-dom";
 
 class Header extends Component{
 
     constructor(state) {
         super(state);
+
 
         this.showSubscribe = this.showSubscribe.bind(this);
 
@@ -17,6 +18,7 @@ class Header extends Component{
     render(){
 
         return (
+            <>
             <header className='site-header'>
                 <div className="container-fluid container-taro">
                     <div className="site-logo">
@@ -25,8 +27,9 @@ class Header extends Component{
                     <Link to="#" className='btn btn-primary' onClick={this.showSubscribe}>Get Early Access</Link>
                 </div>
             </header>
+            </>
         )
     }
 }
 
-export default Header;
+export default Header

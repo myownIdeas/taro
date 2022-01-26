@@ -14,15 +14,47 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/render-page-for-customer-verification',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+        'uses'=>'CustomerController@renderPageForCustomerVerification', 'as' =>'render-page-for-customer-verification'
+    ]
+);
 Route::post('/merchant-plugin',
     [
         'middleware'=>
             [
                 // 'webValidate:loginRequest'
             ],
-        'uses'=>'MerchentController@create', 'as' =>'merchant-plugin'
+        'uses'=>'CustomerController@create', 'as' =>'merchant-plugin'
     ]
 );
+
+Route::get('get-customer-records-by-uuid',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+    'uses'=>'CustomerController@getNumber', 'as' =>'get-customer-records-by-uuid'
+    ]
+);
+
+Route::post('send-otp-on-mobile',
+    [
+        'middleware'=>
+            [
+                // 'webValidate:loginRequest'
+            ],
+    'uses'=>'SmsController@setCodeForMobile', 'as' =>'send-otp-on-mobile'
+    ]
+);
+
+
 
 
 Route::post('/saveEmail',

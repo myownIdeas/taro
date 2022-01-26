@@ -67,7 +67,7 @@ function Footer() {
                                     </div>
                                 </div>
                             </form>
-                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>
                         </div>
                     </div>
                     <div className='sf-copyrights'>
@@ -80,8 +80,8 @@ function Footer() {
 
             </footer>
 
-            
-            
+
+
         </>
     )
 }

@@ -37,7 +37,7 @@ class MainModel extends Component{
             this.setState({email:""});
            swal({
                 title: "Thank you!",
-                text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+                text: "Thanks for joining Taro, we'll be back to you soon with our exciting new features!",
                 className: 'subscribed-modal'
             });
             $('#subscribeModal').modal('hide');

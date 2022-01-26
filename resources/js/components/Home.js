@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, HashRouter, Link, Route } from "react-
 import axios from "axios";
 import swal from 'sweetalert';
 import MainModel from './MainModel.js';
-
 function Home() {
 
     const initialState = { email: "" };
@@ -43,11 +42,11 @@ function Home() {
         setformErrors(validate(data));
 
         // if(Object.keys(formErrors).length ===0 ){
-        axios.post(url + 'api/saveEmail', data).then(res => {
+        axios.post(url+'api/saveEmail', data).then(res => {
             clearState();
             swal({
                 title: "Thank you!",
-                text: "Thanks for joining Taro, we'll be back to you soon with our new exciting new features!",
+                text: "Thanks for joining Taro, we'll be back to you soon with our exciting new features!",
                 className: 'subscribed-modal'
             });
             $('#subscribeModal').modal('hide');
@@ -91,7 +90,7 @@ function Home() {
                                     </div>
                                 </div>
                             </form>
-                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                            <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +148,7 @@ function Home() {
                                         </div>
                                     </div>
                                 </form>
-                                <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>                                
+                                <p>No spam, notifications only about new products and updates. You can always unsubscribe.</p>
                             </div>
                         </div>
                         <img src="frontend/images/circles-shape.svg" alt="" className='circles-shape' />

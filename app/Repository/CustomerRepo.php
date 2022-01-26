@@ -9,14 +9,16 @@
 namespace App\Repository;
 
 
+use App\Customers;
 use App\EmailSubscriber;
 use App\Merchant;
 use Illuminate\Support\Str;
 
-class MerchentRepo
+class CustomerRepo
 {
     public function makeParams($inputs){
        return [
+           'customer_uuid'=>Str::uuid(),
             'x_customer_first_name'=>(isset($inputs['x_customer_first_name']))?$inputs['x_customer_first_name']:null,
             'x_customer_last_name'=>(isset($inputs['x_customer_last_name']))?$inputs['x_customer_last_name']:null,
             'x_customer_shipping_address1'=>(isset($inputs['x_customer_shipping_address1']))?$inputs['x_customer_shipping_address1']:null,
@@ -31,22 +33,36 @@ class MerchentRepo
     }
 
     public function create($params){
-        return  $this->mapOutSide(Merchant::create($this->makeParams($params))->toArray());
+        return  $this->mapOutSide(Customers::create($this->makeParams($params))->toArray());
+    }
+
+    public function createCustomerWithMobile($params){
+        $customer =[
+            'uuid'=>Str::uuid(),
+            'number'=>$params['number'],
+            'mobile_otp'=>$params['code']
+        ];
+        return $this->getCustomerByUUID(Customers::create($customer)->uuid);
+    }
+    public function getCustomerByUUID($uuid){
+       return $this->mapOutSide(Customers::where('uuid',$uuid)->first());
+    }
+    public function updateOtpCode($params){
+
     }
 
     public function mapOutSide($record){
 
        return  [
-                'x_customer_first_name'=>$record['x_customer_first_name'],
-                'x_customer_last_name'=>$record['x_customer_last_name'],
-                'x_customer_shipping_address1'=>$record['x_customer_shipping_address1'],
-                'x_customer_email'=>$record['x_customer_email'],
-                'x_customer_shipping_city'=>$record['x_customer_shipping_city'],
-                'x_currency'=>$record['x_currency'],
-                'x_amount'=>$record['x_amount'],
-                'x_account_id'=>$record['x_account_id'],
-                'x_reference'=>$record['x_reference'],
-                'x_test'=>$record['x_test'],
+                'uuid'=>$record['uuid'],
+                'first_name'=>$record['first_name'],
+                'last_name'=>$record['last_name'],
+                'shipping_address1'=>$record['shipping_address1'],
+                'email'=>$record['email'],
+                'shipping_city'=>$record['shipping_city'],
+                'number'=>$record['number'],
+                'mobileCode'=>$record['mobile_otp'],
+                //'return_url'=>asset('/').'render-page-for-customer-verification?uuid='.$record['customer_uuid']
             ];
     }
 }
