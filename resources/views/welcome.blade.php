@@ -32,74 +32,49 @@
     </body>
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
     <script>
-	    // init controller
-	    var controller = new ScrollMagic.Controller();
-    </script>
-    <script>
-	$(function () { // wait for document ready
-		// build scene
-		var scene = new ScrollMagic.Scene(
-            {
-                triggerElement: "#triggerfix",
-                duration: 500,
-                triggerHook: 0,
-            }
-        )
-            .on('enter',function (){
-                enterSlider();
-            }).on('leave',function (){
-                endSlider();
-            })
-		.setPin(".steps-slider-sec")
-		.addTo(controller)
+    jQuery(document).ready(function($) {
+  
+      var $stage = $('.stage'),
+      $textA = $('#customerTextA'),
+      $textB = $('#customerTextB'),
+      $textC = $('#customerTextC'),
+      $computerA = $('#computerA'),
+      $approved = $('#approved'),
+      $computerB = $('#computerB');
 
-	});
+      // initialize controller
+      var controller = new ScrollMagic.Controller();
+      controller.scrollTo(0);
+
+      // build timeline with animation tweens
+      var scrollAnimation = new TimelineMax();
+      scrollAnimation.set($stage, {autoAlpha: 1})
 
 
-    function enterSlider(){
-        var slideOverlay = document.getElementById("slideoverlay");
-        slideOverlay.style.display = "none";
-    }
-        var swiper = new Swiper(".mySwiper", {
-            direction: getDirection(),
-            autoHeight: true,
-            edgeSwipeThreshold: 0,
-            preventInteractionOnTransition: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+      .from($textA, 3, {y:400, opacity: 1})
+      .to($textA, 4, {y:-200, opacity: 1})
+      .to($textA, 3, {y:-400, opacity: 0})
 
-            },
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
-                },
-            },
-            mousewheel: {
-                virtual: true,
-                sensitivity: 1,
-                releaseOnEdges:true,
-                forceToAxis: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 991 ? 'horizontal' : 'vertical';
-            return direction;
-        }
+      .from($textB, 4, {y:400, opacity: 0})
+      .to($textB, 5, {y:-200, opacity: 1})
+      .to($textB, 4, {y:-400, opacity: 0})
 
-    function endSlider(){
-        var slideOverlay = document.getElementById("slideoverlay");
-        slideOverlay.style.display = "block";
-    }
+      .from($textC, 3, {y:400, opacity: 0})
+      .to($textC, 4, {y:-200, opacity: 1})
+      .to($textC, 3, {y:-400, opacity: 1})
 
 
+      // build scene and link scrolling to animation
+      var scene = new ScrollMagic.Scene({triggerElement: "#how-it-works", duration: 4000})
+      .setPin(".stage")
+      .addTo(controller)
+      .setTween(scrollAnimation);
+      scene.offset(300);
+    });
     </script>
 
 </html>
