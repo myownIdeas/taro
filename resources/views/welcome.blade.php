@@ -45,6 +45,7 @@
       $computerA = $('#computerA'),
       $approved = $('#approved'),
       $computerB = $('#computerB');
+      $bullets = $('.fake-bullets');
 
       // initialize controller
       var controller = new ScrollMagic.Controller();
@@ -56,15 +57,20 @@
 
 
       .from($textA, 3, {y:400, opacity: 1})
-      .to($textA, 4, {y:-200, opacity: 1})
+      .to($bullets, 1, {y:-200, className:"+=one"}) // Bullets
+      .to($textA, 50, {y:-200, opacity: 1})
       .to($textA, 3, {y:-400, opacity: 0})
 
       .from($textB, 4, {y:400, opacity: 0})
-      .to($textB, 5, {y:-200, opacity: 1})
+      .to($bullets, 1, {className:"+=two"}) // Bullets
+      .to($bullets, 1, {className:"-=one"}) // Bullets
+      .to($textB, 50, {y:-200, opacity: 1})
       .to($textB, 4, {y:-400, opacity: 0})
 
       .from($textC, 3, {y:400, opacity: 0})
-      .to($textC, 4, {y:-200, opacity: 1})
+      .to($bullets, 1, {className:"+=three"}) // Bullets
+      .to($bullets, 1, {y:-200, className:"-=two"}) // Bullets
+      .to($textC, 50, {y:-200, opacity: 1})
       .to($textC, 3, {y:-400, opacity: 1})
 
 
