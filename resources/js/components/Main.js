@@ -7,6 +7,7 @@ import Home from "./Home.js";
 import About from "./About.js";
 import HeaderWrap from "./Header.js";
 import FooterWrap from "./Footer.js";
+import GetAmount from "./GetAmount";
 import MobileVerification from "./MobileVerification";
 export default class Main extends Component {
 
@@ -17,16 +18,18 @@ export default class Main extends Component {
         return (
             <React.Fragment>
                 <Router>
-                    {(location.pathname === '/render-page-for-customer-verification'?'':<HeaderWrap />)}
+                    {(location.pathname === '/render-page-for-customer-verification' || location.pathname === '/get-order-amount'?'':<HeaderWrap />)}
 
-                    <div className='wrapper'>
-                        <Routes>
-                            <Route path="/" element={<Home />}></Route>
-                            <Route exit path="/render-page-for-customer-verification" element={<MobileVerification />}></Route>
-                        </Routes>
+                        <div className='wrapper'>
+                            <Routes>
+                                <Route path="/" element={<Home />}></Route>
+                                <Route path="/get-order-amount" element={<GetAmount />}></Route>
+                                <Route exit path="/render-page-for-customer-verification" element={<MobileVerification />}></Route>
+                            </Routes>
 
-                    </div>
-                    {(location.pathname === '/render-page-for-customer-verification'?'':<FooterWrap />)}
+                        </div>
+
+                    {(location.pathname === '/render-page-for-customer-verification' || location.pathname === '/get-order-amount'?'':<FooterWrap />)}
 
                 </Router>
             </React.Fragment>
